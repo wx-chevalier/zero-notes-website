@@ -1,2 +1,4 @@
-# wx-cli
-Simple CLI for scaffolding Various projects - Motivation By vue-cli
+# wx-toolchain
+
+- [wx-cli](./wx-cli): Simple and Futuristic Scaffolding Tool for Various Projects - Inspired By vue-cli & sao
+
