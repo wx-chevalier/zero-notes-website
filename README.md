@@ -1,4 +1,7 @@
 # wx-toolchain
 
-- [wx-cli](./wx-cli): Simple and Futuristic Scaffolding Tool for Various Projects - Inspired By vue-cli & sao
+# About
 
+## Acknowledge
+
+- [hygen #Project#](https://github.com/jondot/hygen): The simple, fast, and scalable code generator that lives in your project.
