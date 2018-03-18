@@ -20,7 +20,7 @@ export async function generateFileTree(parentDirectory: string) {
     files: []
   };
 
-  const paths: string[] = walkSync(parentDirectory);
+  const paths: string[] = walkSync(parentDirectory, { ignore: ['.git'] });
 
   for (let path of paths) {
     let segments: string[] = path.split('/');
@@ -165,8 +165,10 @@ export function generateTocFromFileTreeWithSubHeader(
     const dir = fileTree.dirs[dirName];
 
     if (currentDepth == 0) {
+      toc += `# ${dirName} \n`;
+    } else if (currentDepth === 1) {
       toc += `## ${dirName} \n`;
-    } else if (currentDepth == 1) {
+    } else if (currentDepth === 2) {
       toc += `### ${dirName} \n`;
     } else {
       toc += `*** \n`;

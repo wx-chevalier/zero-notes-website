@@ -29,7 +29,7 @@ const repos: { [key: string]: ReposityConfig } = {
     sUrl: 'https://parg.co/b4z',
     chapterHeader: 'https://parg.co/UGo',
     depth: 2,
-    localPath: `${baseLocalDir}/Coder-Knowledge-Management/Awesome-Reference`
+    localPath: `${baseLocalDir}/Awesome-Reference`
   },
 
   'Awesome-CheatSheet': {
@@ -37,7 +37,7 @@ const repos: { [key: string]: ReposityConfig } = {
     sUrl: 'https://parg.co/UCH',
     chapterHeader: 'https://parg.co/UCb',
     depth: 2,
-    localPath: `${baseLocalDir}/Coder-Knowledge-Management/Awesome-CheatSheet`
+    localPath: `${baseLocalDir}/Awesome-CheatSheet`
   },
 
   // ProgrammingLanguage-Series
