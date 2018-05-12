@@ -1,0 +1,15 @@
+{
+  "name": "menu-craft",
+  "version": "0.0.1",
+  "description": "Menu Craft",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": "",
+  "author": "wxyyxc1992@github",
+  "license": "BSD",
+  "dependencies": {
+    "voxel-hello-world": "^0.6.0"
+  }
+}

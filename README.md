@@ -1,4 +1,6 @@
-# xCompass: 引航者
+# xCompass | 引航者
+
+* [x-home | 掌阅](./x-home): 个人主页
 
 * [star-altas | 星图](./star-altas): Interactive Knowledge Map, 交互式的知识图谱
 
@@ -17,6 +19,8 @@
 * [generator | 生成器](./generator): 模板项目生成工具
 
 * [x-switch | 掌阅](./x-switch): 移动端的阅读工具
+
+
 
 # About
 
