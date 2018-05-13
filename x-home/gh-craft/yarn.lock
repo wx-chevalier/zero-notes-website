@@ -195,8 +195,8 @@ byline@^5.0.0:
   resolved "http://registry.npm.taobao.org/byline/download/byline-5.0.0.tgz#741c5216468eadc457b03410118ad77de8c1ddb1"
 
 byte-size@^4.0.2:
-  version "4.0.2"
-  resolved "http://registry.npm.taobao.org/byte-size/download/byte-size-4.0.2.tgz#e8ddbf7161913965c6af5b236a4bed8896bdc83e"
+  version "4.0.3"
+  resolved "http://registry.npm.taobao.org/byte-size/download/byte-size-4.0.3.tgz#b7c095efc68eadf82985fccd9a2df43a74fa2ccd"
 
 cacache@^10.0.0, cacache@^10.0.4:
   version "10.0.4"
@@ -420,7 +420,7 @@ debug@3.1.0, debug@^3.1.0:
   dependencies:
     ms "2.0.0"
 
-debuglog@*, debuglog@^1.0.1:
+debuglog@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/debuglog/download/debuglog-1.0.1.tgz#aa24ffb9ac3df9a2351837cfb2d279360cd78492"
 
@@ -569,11 +569,7 @@ execa@^0.7.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-extend@1.1.3:
-  version "1.1.3"
-  resolved "http://registry.npm.taobao.org/extend/download/extend-1.1.3.tgz#5ae3d12e33009879dfb574e911a2da1e3da29ef4"
-
-extend@~3.0.1:
+extend@^3.0.1, extend@~3.0.1:
   version "3.0.1"
   resolved "http://registry.npm.taobao.org/extend/download/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
 
@@ -863,7 +859,7 @@ import-lazy@^2.1.0:
   version "2.1.0"
   resolved "http://registry.npm.taobao.org/import-lazy/download/import-lazy-2.1.0.tgz#05698e3d45c88e8d7e9d92cb0584e77f096f3e43"
 
-imurmurhash@*, imurmurhash@^0.1.4:
+imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "http://registry.npm.taobao.org/imurmurhash/download/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
 
@@ -915,9 +911,17 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/invert-kv/download/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
+iota-array@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/iota-array/download/iota-array-1.0.0.tgz#81ef57fe5d05814cd58c2483632a99c30a0e8087"
+
 ip@^1.1.4:
   version "1.1.5"
   resolved "http://registry.npm.taobao.org/ip/download/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
+
+is-buffer@^1.0.2:
+  version "1.1.6"
+  resolved "http://registry.npm.taobao.org/is-buffer/download/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
 
 is-builtin-module@^1.0.0:
   version "1.0.0"
@@ -1107,10 +1111,6 @@ lockfile@^1.0.4:
   dependencies:
     signal-exit "^3.0.2"
 
-lodash._baseindexof@*:
-  version "3.1.0"
-  resolved "http://registry.npm.taobao.org/lodash._baseindexof/download/lodash._baseindexof-3.1.0.tgz#fe52b53a1c6761e42618d654e4a25789ed61822c"
-
 lodash._baseuniq@~4.6.0:
   version "4.6.0"
   resolved "http://registry.npm.taobao.org/lodash._baseuniq/download/lodash._baseuniq-4.6.0.tgz#0ebb44e456814af7905c6212fa2c9b2d51b841e8"
@@ -1118,27 +1118,9 @@ lodash._baseuniq@~4.6.0:
     lodash._createset "~4.0.0"
     lodash._root "~3.0.0"
 
-lodash._bindcallback@*:
-  version "3.0.1"
-  resolved "http://registry.npm.taobao.org/lodash._bindcallback/download/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
-
-lodash._cacheindexof@*:
-  version "3.0.2"
-  resolved "http://registry.npm.taobao.org/lodash._cacheindexof/download/lodash._cacheindexof-3.0.2.tgz#3dc69ac82498d2ee5e3ce56091bafd2adc7bde92"
-
-lodash._createcache@*:
-  version "3.1.2"
-  resolved "http://registry.npm.taobao.org/lodash._createcache/download/lodash._createcache-3.1.2.tgz#56d6a064017625e79ebca6b8018e17440bdcf093"
-  dependencies:
-    lodash._getnative "^3.0.0"
-
 lodash._createset@~4.0.0:
   version "4.0.3"
   resolved "http://registry.npm.taobao.org/lodash._createset/download/lodash._createset-4.0.3.tgz#0f4659fbb09d75194fa9e2b88a6644d363c9fe26"
-
-lodash._getnative@*, lodash._getnative@^3.0.0:
-  version "3.9.1"
-  resolved "http://registry.npm.taobao.org/lodash._getnative/download/lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5"
 
 lodash._root@~3.0.0:
   version "3.0.1"
@@ -1147,10 +1129,6 @@ lodash._root@~3.0.0:
 lodash.clonedeep@~4.5.0:
   version "4.5.0"
   resolved "http://registry.npm.taobao.org/lodash.clonedeep/download/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
-
-lodash.restparam@*:
-  version "3.6.1"
-  resolved "http://registry.npm.taobao.org/lodash.restparam/download/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
 
 lodash.union@~4.6.0:
   version "4.6.0"
@@ -1349,6 +1327,13 @@ mustache@0.4.0:
 mute-stream@~0.0.4:
   version "0.0.7"
   resolved "http://registry.npm.taobao.org/mute-stream/download/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
+
+ndarray@~1.0.5:
+  version "1.0.18"
+  resolved "http://registry.npm.taobao.org/ndarray/download/ndarray-1.0.18.tgz#b60d3a73224ec555d0faa79711e502448fd3f793"
+  dependencies:
+    iota-array "^1.0.0"
+    is-buffer "^1.0.2"
 
 node-fetch-npm@^2.0.2:
   version "2.0.2"
@@ -1959,7 +1944,7 @@ readable-stream@~1.1.10:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readdir-scoped-modules@*, readdir-scoped-modules@^1.0.0:
+readdir-scoped-modules@^1.0.0:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/readdir-scoped-modules/download/readdir-scoped-modules-1.0.2.tgz#9fafa37d286be5d92cbaebdee030dc9b5f406747"
   dependencies:
@@ -2492,9 +2477,9 @@ voxel-engine@0.5.3:
     voxel-region-change "0.0.2"
     voxel-texture "0.3.0"
 
-voxel-engine@~0.18.0:
-  version "0.18.4"
-  resolved "http://registry.npm.taobao.org/voxel-engine/download/voxel-engine-0.18.4.tgz#dc1e8b2c4ef03c342348049c1e23a096c3b1f6b1"
+voxel-engine@>=0.15.0:
+  version "0.20.2"
+  resolved "http://registry.npm.taobao.org/voxel-engine/download/voxel-engine-0.20.2.tgz#3e7b5b80fbf55e09f269e32976c6146f03498a38"
   dependencies:
     aabb-3d "0.0.0"
     collide-3d-tilemap "0.0.1"
@@ -2517,28 +2502,16 @@ voxel-engine@~0.18.0:
     voxel-texture "0.5.6"
     voxel-view "0.0.6"
 
-voxel-fly@~0.1.0:
+voxel-fly@^0.1.2:
   version "0.1.2"
   resolved "http://registry.npm.taobao.org/voxel-fly/download/voxel-fly-0.1.2.tgz#3b50ea4547807216835ca680603ef864da3385ff"
   dependencies:
     ever "0.0.3"
     vkey "0.0.2"
 
-voxel-hello-world@^0.6.0:
-  version "0.6.0"
-  resolved "http://registry.npm.taobao.org/voxel-hello-world/download/voxel-hello-world-0.6.0.tgz#2a398c06578cc864322141c2546b0ae801f23d64"
-  dependencies:
-    extend "1.1.3"
-    voxel "0.3.1"
-    voxel-engine "~0.18.0"
-    voxel-fly "~0.1.0"
-    voxel-highlight "0.0.9"
-    voxel-player "0.1.0"
-    voxel-walk "git://github.com/flyswatter/voxel-walk.git"
-
-voxel-highlight@0.0.9:
-  version "0.0.9"
-  resolved "http://registry.npm.taobao.org/voxel-highlight/download/voxel-highlight-0.0.9.tgz#19c1da38ebf15595381d67edbb2f025cba9702ff"
+voxel-highlight@^0.0.10:
+  version "0.0.10"
+  resolved "http://registry.npm.taobao.org/voxel-highlight/download/voxel-highlight-0.0.10.tgz#abef706f2e665534e4eb6f62ffd55c2596f80781"
   dependencies:
     inherits "1.0.0"
     underscore "1.4.4"
@@ -2553,6 +2526,12 @@ voxel-mesh@0.2.1:
   version "0.2.1"
   resolved "http://registry.npm.taobao.org/voxel-mesh/download/voxel-mesh-0.2.1.tgz#6b7539e46e08435ddcb3ee7ccb6a2f5144eeca69"
 
+voxel-modal@^0.2.8:
+  version "0.2.8"
+  resolved "http://registry.npm.taobao.org/voxel-modal/download/voxel-modal-0.2.8.tgz#a211ac18d89c0ea3dfa2d6fb4f32d9b0d7292743"
+  dependencies:
+    ever "0.0.3"
+
 voxel-physical@0.0.10:
   version "0.0.10"
   resolved "http://registry.npm.taobao.org/voxel-physical/download/voxel-physical-0.0.10.tgz#fc9f66facd6d6b4e1c422c4daab5c67eac436a58"
@@ -2560,7 +2539,7 @@ voxel-physical@0.0.10:
     aabb-3d "0.0.X"
     three "0.X.X"
 
-voxel-player@0.1.0:
+voxel-player@^0.1.0:
   version "0.1.0"
   resolved "http://registry.npm.taobao.org/voxel-player/download/voxel-player-0.1.0.tgz#dacfaf0e60e42ec84732feb6b4f05d5df00a64be"
   dependencies:
@@ -2600,9 +2579,9 @@ voxel-view@0.0.6:
   version "0.0.6"
   resolved "http://registry.npm.taobao.org/voxel-view/download/voxel-view-0.0.6.tgz#b4924f2fc1e89a78bb332efbc99e29664d6274c8"
 
-"voxel-walk@git://github.com/flyswatter/voxel-walk.git":
+voxel-walk@^0.0.5:
   version "0.0.5"
-  resolved "git://github.com/flyswatter/voxel-walk.git#fc4ca7b0d63f1308d05bbdf081d95a97381f78c6"
+  resolved "http://registry.npm.taobao.org/voxel-walk/download/voxel-walk-0.0.5.tgz#bbc866922876b771bba4539df3fa0b20ee37f81f"
   dependencies:
     minecraft-skin "~0.1.2"
     painterly-textures "0.0.3"
@@ -2621,6 +2600,13 @@ voxel@0.3.1:
   resolved "http://registry.npm.taobao.org/voxel/download/voxel-0.3.1.tgz#a9717a7635fe1e9431b78f172812385a98777e1b"
   dependencies:
     inherits "1.0.0"
+
+voxel@^0.5.0:
+  version "0.5.0"
+  resolved "http://registry.npm.taobao.org/voxel/download/voxel-0.5.0.tgz#2e90efe83a0c15f2f87b960af1c1ba0831a89993"
+  dependencies:
+    inherits "1.0.0"
+    ndarray "~1.0.5"
 
 voxel@~0.1.1, voxel@~0.1.5:
   version "0.1.5"

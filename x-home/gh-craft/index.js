@@ -1,3 +1,5 @@
+const WebView = require('./src/plugins/DialogWebView');
+
 const urls = {
   'awesome-links': 'https://github.com/wxyyxc1992/Awesome-Links',
   'awesome-coder': 'https://github.com/wxyyxc1992/Awesome-Coder',
@@ -7,15 +9,22 @@ const urls = {
 const slides = Object.keys(urls);
 
 /** 初始化游戏 */
-const game = require('voxel-hello-world')({
+const { game, player, walk } = require('./src/world/BasicWorld')({
   texturePath: './textures/',
   playerSkin: './textures/player.png',
-  materials: ['yellow']
+  materials: [['grass', 'brick']]
     .concat(slides)
     .concat(['王', '下', '邀', '月', '熊', 'fire']),
   materialFlatColor: false,
   generateVoxelChunks: false,
   chunkDistance: 1
+});
+
+player.toggle();
+
+const webView = new WebView(game, {
+  url: 'https://github.com/wxyyxc1992/xCompass/tree/master/x-home/gh-craft',
+  contents: [document.querySelector('#ifr')]
 });
 
 /** 初始化设置块 */
@@ -44,7 +53,8 @@ game.on('setBlock', function(pos, val, old) {
   if (old === 1 || val === 1) return;
   var url = urls[slides[old - 2]];
   // var win = window.open(url);
-  window.location.href = url;
+  // window.location.href = url;
+  webView.open();
 });
 
 game.interact.on('release', function() {
@@ -55,3 +65,33 @@ game.interact.on('attain', function() {
 });
 
 window.game = game;
+
+function simulateKeyEvent(character) {
+  var evt = document.createEvent('KeyboardEvent');
+  (evt.initKeyEvent || evt.initKeyboardEvent)(
+    'keypress',
+    true,
+    true,
+    window,
+    0,
+    0,
+    0,
+    0,
+    0,
+    character.charCodeAt(0)
+  );
+  var canceled = !document.body.dispatchEvent(evt);
+  if (canceled) {
+    // A handler called preventDefault
+    alert('canceled');
+  } else {
+    // None of the handlers called preventDefault
+    alert('not canceled');
+  }
+}
+
+document.querySelector('#controlPanel').addEventListener('click', () => {
+  window.requestAnimationFrame(() => {
+    walk.startWalking();
+  });
+});
