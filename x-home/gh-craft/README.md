@@ -2,6 +2,8 @@
 
 Github Profile in Craft World, built with [voxel.js](http://voxeljs.com/) and act as PWAs.
 
+![](https://user-images.githubusercontent.com/5803001/40374561-e356d2bc-5e1b-11e8-9df1-bb3c22245875.png)
+
 # Motivation & Credits
 
 * [voxel-webview #Project#](https://github.com/voxel/voxel-webview/blob/master/webview.js): embed webpages in a voxel.js world using CSS 3D (voxel.js plugin)
