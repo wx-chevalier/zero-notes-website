@@ -10,9 +10,11 @@ Github Profile in Craft World, built with [voxel.js](http://voxeljs.com/) and ac
 
 * [voxel-texture #Project#](https://github.com/shama/voxel-texture): Add textures to an atlas and set UV mapping on geometries. Used for texturing in voxel.js.
 
-* [GitHub Contributions Chart Generator](https://github-contributions.now.sh/): All your contributions in one image!
+* [GitHub Contributions Chart Generator #Project#](https://github-contributions.now.sh/): All your contributions in one image!
 
-* [My Github Resume](http://resume.github.io/): As a software startup owner I really enjoy when people send us their résumés and they include their github account so we can see tangible work they have done.
+* [My Github Resume #Project#](http://resume.github.io/): As a software startup owner I really enjoy when people send us their résumés and they include their github account so we can see tangible work they have done.
+
+* [3d-loaders #Project#](https://icons8.com/cssload/en/3d-loaders)
 
 # Roadmap
 
