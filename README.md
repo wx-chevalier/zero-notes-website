@@ -1,8 +1,12 @@
+![default](https://user-images.githubusercontent.com/5803001/40462361-257cfd48-5f42-11e8-899a-d0077c37d931.png)
+
 # xCompass | 引航者
 
-* [x-home | 掌阅](./x-home): 个人主页
+* [client | 终端](./client): xCompass 终端
 
-* [star-altas | 星图](./star-altas): Interactive Knowledge Map, 交互式的知识图谱
+  * [weapp](./client/weapp): 微信小程序端
+
+* [server | 服务端](./server): xCompass 的中心服务端
 
 * [x-doc | 文档辅助](./x-doc): 文档管理
 
@@ -16,11 +20,7 @@
 
   * [shuttle-webpack-plugin](./shuttle/shuttle-webpack-plugin): 能够自动根据 Webpack 编译错误执行查询的插件
 
-* [generator | 生成器](./generator): 模板项目生成工具
-
-* [x-switch | 掌阅](./x-switch): 移动端的阅读工具
-
-
+* [generator | 生成器](./generator): 通用模板项目生成工具
 
 # About
 
