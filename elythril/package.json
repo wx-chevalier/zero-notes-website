@@ -1,0 +1,16 @@
+{
+  "name": "elythril",
+  "version": "0.0.1",
+  "description": "Knowledge Terminology Gallery",
+  "main": "index.js",
+  "repository": "https://github.com/wxyyxc1992/xCompass",
+  "author": "wxyyxc1992",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "parcel": "^1.9.7"
+  },
+  "scripts": {
+    "start": "parcel index.html --global THREE"
+  }
+}

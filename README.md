@@ -2,32 +2,18 @@
 
 # xCompass | 引航者
 
-* [client | 终端](./client): xCompass 终端
+## [homepage | 主页](./homepage)
 
-  * [weapp](./client/weapp): 微信小程序端
+## gh-craft
 
-* [server | 服务端](./server): xCompass 的中心服务端
+Github Profile in Craft World, built with [voxel.js](http://voxeljs.com/) and act as PWAs.
 
-* [x-doc | 文档辅助](./x-doc): 文档管理
+![](https://user-images.githubusercontent.com/5803001/40374561-e356d2bc-5e1b-11e8-9df1-bb3c22245875.png)
 
-  * [syncoc](./x-doc/syncoc): Sync & Toc, 文档多端同步、目录生成、索引构建
+## Application
 
-  * [hexo](./x-doc/hexo): Hexo 文档模板
+- [x-client | 终端](./client): xCompass 终端
 
-  * [nikode](./x-doc/nikode): 借鉴 Polacode 的代码（动态）截图生成工具
+  - [weapp](./client/weapp): 微信小程序端
 
-* [shuttle | 轻舟](./shuttle): 知识检索
-
-  * [shuttle-webpack-plugin](./shuttle/shuttle-webpack-plugin): 能够自动根据 Webpack 编译错误执行查询的插件
-
-* [generator | 生成器](./generator): 通用模板项目生成工具
-
-# About
-
-## Motivation & Credits
-
-* [learn-anything #Project#](https://github.com/learn-anything/learn-anything): Search Interactive Maps to Learn Anything.
-
-* [Growth #Project#](https://github.com/phodal/growth): Growth 3.0 with React Native - an app to help you to be Awesome Developer
-
-* [hygen #Project#](https://github.com/jondot/hygen): The simple, fast, and scalable code generator that lives in your project.
+- [x-server | 服务端](./server): xCompass 的中心服务端

@@ -1,0 +1,143 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #000000;
+  margin: 0;
+  font-family: Arial;
+  overflow: hidden;
+}
+
+a {
+  color: #ffffff;
+}
+
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(
+    90deg,
+    #c04848 10%,
+    #480048 90%
+  ); /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(
+    90deg,
+    #c04848 10%,
+    #480048 90%
+  ); /* FF3.6+ */
+  background: -ms-linear-gradient(90deg, #c04848 10%, #480048 90%); /* IE10 */
+  background: -o-linear-gradient(
+    90deg,
+    #c04848 10%,
+    #480048 90%
+  ); /* Opera 11.10+ */
+  background: linear-gradient(90deg, #c04848 10%, #480048 90%); /* W3C */
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(http://www.script-tutorials.com/demos/360/images/stars.png)
+    repeat top center;
+  z-index: 0;
+}
+
+#info {
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
+  padding: 5px;
+  font-family: Monospace;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#menu {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+#credits {
+  position: fixed;
+  bottom: 5px;
+  margin-left: calc(50vw - 110px);
+
+  color: white;
+  font-size: 12px;
+}
+
+.element {
+  width: 500px;
+  height: 180px;
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+  border: 1px solid rgba(127, 255, 255, 0.25);
+  cursor: default;
+}
+
+.element:hover {
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.75);
+  border: 1px solid rgba(127, 255, 255, 0.75);
+}
+
+.element .number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: rgba(127, 255, 255, 0.75);
+}
+
+.element .symbol {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  font-size: 70px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: bold;
+
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+  -moz-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+  -o-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+  -ms-filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+  filter: drop-shadow(0px 0px 20px rgba(0, 255, 255, 0.95));
+}
+
+.element .details {
+  position: absolute;
+  top: 125px;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  color: rgba(127, 255, 255, 0.75);
+}
+
+button {
+  color: rgba(127, 255, 255, 0.75);
+  background: transparent;
+  outline: 1px solid rgba(127, 255, 255, 0.75);
+  border: 0px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+button:active {
+  color: #000000;
+  background-color: rgba(0, 255, 255, 0.75);
+}
