@@ -11,6 +11,7 @@
     "parcel": "^1.9.7"
   },
   "scripts": {
-    "start": "parcel index.html --global THREE"
+    "start": "parcel index.html --global THREE",
+    "build": "parcel build index.html --global THREE"
   }
 }
