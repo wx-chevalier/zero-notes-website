@@ -40,12 +40,7 @@ const config = {
       },
       {
         test: /\.(scss|sass)$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          baseConfig.extra.moduleCSSLoader,
-          'postcss-loader',
-          'sass-loader'
-        ]
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
       }
     ]
   },
@@ -54,7 +49,7 @@ const config = {
     new CopyWebpackPlugin([{ from: PATHS.public, to: PATHS.build }]),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, './lib/template.ejs'),
-      title: 'Webpack React',
+      title: '某熊的主页',
       favicon: path.join(baseConfig.extra.PATHS.public, 'favicon.ico'),
       manifest: path.join(PATHS.public, 'manifest.json'),
       meta: [
@@ -65,7 +60,7 @@ const config = {
             'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no'
         }
       ],
-      appMountIds: ['root'],
+      // appMountIds: ['root'],
       inject: false,
       minify: {
         html5: true,
@@ -79,8 +74,7 @@ const config = {
         removeEmptyAttributes: true,
         removeStyleLinkTypeAttributes: true
       },
-      mobile: true,
-      scripts: ['./static.js']
+      mobile: true
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[chunkhash].css'

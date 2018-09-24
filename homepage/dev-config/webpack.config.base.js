@@ -49,10 +49,7 @@ module.exports = {
       {
         test: /\.(ts|tsx)?$/,
         loader: 'awesome-typescript-loader',
-        exclude: /node_modules/,
-        options: {
-          useBabel: true
-        }
+        exclude: /(node_modules|.*ts-worker.*)/
       },
       {
         test: /\.(png|jpg|gif)$/,

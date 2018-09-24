@@ -14,7 +14,7 @@ instance.expensive(10000).then((count: number) => {
 
 declare var PRODUCTION: any;
 
-if (typeof PRODUCTION !== 'undefined') {
+if (typeof PRODUCTION !== 'undefined' && PRODUCTION) {
   OfflinePluginRuntime.install();
 }
 
