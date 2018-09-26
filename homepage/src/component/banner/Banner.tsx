@@ -48,7 +48,10 @@ export default class Banner extends React.Component {
         </div>
         <div className={`${prefix}-info`}>
           <div className="slogan">
-            <h2>Just Coder, Travel in Galaxy</h2>
+            <img
+              src="https://user-images.githubusercontent.com/5803001/46023444-3b69d400-c117-11e8-98d7-d18c44b6dc25.png"
+              alt="Just Coder, Travel in Galaxy"
+            />
           </div>
           <div>
             <div

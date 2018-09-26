@@ -1,0 +1,27 @@
+.footer {
+  &-item {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 4vw;
+
+    cursor: pointer;
+    text-align: left;
+
+    &--noimg {
+      text-align: center;
+      padding: 0;
+    }
+
+    img {
+      height: 25px;
+      margin-right: 8px;
+    }
+
+    a {
+      color: white;
+      &:visited {
+        color: white;
+      }
+    }
+  }
+}

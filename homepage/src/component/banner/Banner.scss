@@ -1,5 +1,5 @@
 .banner {
-  height: 450px;
+  height: 550px;
   margin-top: 0px;
   width: 100%;
   padding: 0 32px;
@@ -315,6 +315,9 @@
 
     .slogan {
       margin-bottom: 16px;
+      img {
+        max-width: 300px;
+      }
     }
 
     h2 {

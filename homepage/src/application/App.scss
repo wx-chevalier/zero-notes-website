@@ -3,10 +3,9 @@
 .app {
   height: 100%;
   min-height: 100vh;
-  background: linear-gradient(to right, #82addb 0%, #ebb2b1 100%);
 
   &-layout {
-    background: transparent;
+    background: linear-gradient(to right, #82addb 0%, #ebb2b1 100%);
 
     .ant-layout-header {
       display: flex;
@@ -38,7 +37,11 @@
         }
 
         span {
-          line-height: 1.5;
+          line-height: 1;
+
+          &:first-child {
+            margin-bottom: 8px;
+          }
         }
       }
 
@@ -79,6 +82,32 @@
 
     h2 {
       color: white;
+    }
+  }
+
+  .toolbar {
+    position: fixed;
+    width: 38px;
+    height: 110px;
+
+    right: 0px;
+    top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    color: white;
+    background: #1890ff;
+
+    > span {
+      writing-mode: vertical-lr;
+      margin-bottom: 10px;
+    }
+
+    > i {
+      zoom: 1.4;
     }
   }
 }

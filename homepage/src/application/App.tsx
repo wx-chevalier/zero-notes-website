@@ -1,4 +1,4 @@
-import { Layout, Menu, Row, Col, Divider, BackTop, Anchor } from 'antd';
+import { Layout, Menu, BackTop, Anchor, Icon } from 'antd';
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 
@@ -7,6 +7,7 @@ import OrgMindMap from '../component/mindmap/OrgMindMap';
 import Perspective from '../component/perspective/Perspective';
 
 import './App.scss';
+import IFooter from '../component/footer/IFooter';
 
 const { Header, Content, Footer } = Layout;
 const { Link } = Anchor;
@@ -41,15 +42,23 @@ export default class App extends React.Component {
                   <Menu.Item key="2">
                     <a href="/gh-craft" target="__blank">
                       <div className="menu-item">
-                        <span>Github Craft</span>
-                        <span>方块的世界</span>
+                        <span>Books Warehouse</span>
+                        <span>藏书阁</span>
                       </div>
                     </a>
                   </Menu.Item>
                   <Menu.Item key="3">
+                    <a href="/gh-craft" target="__blank">
+                      <div className="menu-item">
+                        <span>Github Craft</span>
+                        <span>方块世界</span>
+                      </div>
+                    </a>
+                  </Menu.Item>
+                  <Menu.Item key="4">
                     <a href="/arcane-cards" target="__blank">
                       <div className="menu-item">
-                        <span>Knowledge Arcane Cards</span>
+                        <span>Glossary Cards</span>
                         <span>知识卡牌</span>
                       </div>
                     </a>
@@ -133,25 +142,15 @@ export default class App extends React.Component {
             <h1>| | |</h1>
           </Content>
           <Footer id="links" style={{ textAlign: 'center' }} className={`${prefix}-footer`}>
-            <Row>
-              <Col span={6}>
-                <h2>博客</h2>
-              </Col>
-              <Col span={6}>
-                <h2>代码</h2>
-              </Col>
-              <Col span={6}>
-                <h2>工具</h2>
-              </Col>
-              <Col span={6}>
-                <h2>关于</h2>
-              </Col>
-            </Row>
-            <Divider />
-            <Row>某熊的技术视野 ©2018 王下邀月熊</Row>
+            <IFooter />
           </Footer>
         </Layout>
         <BackTop />
+        {/* 浮动工具条 */}
+        <div className="toolbar">
+          <span>知识检索</span>
+          <Icon type="search" theme="outlined" />
+        </div>
       </div>
     );
   }

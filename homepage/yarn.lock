@@ -336,6 +336,10 @@
   version "0.22.9"
   resolved "http://registry.npm.taobao.org/@types/cheerio/download/@types/cheerio-0.22.9.tgz#b5990152604c2ada749b7f88cab3476f21f39d7b"
 
+"@types/classnames@^2.2.6":
+  version "2.2.6"
+  resolved "http://registry.npm.taobao.org/@types/classnames/download/@types/classnames-2.2.6.tgz#dbe8a666156d556ed018e15a4c65f08937c3f628"
+
 "@types/enzyme@^3.1.10":
   version "3.1.14"
   resolved "http://registry.npm.taobao.org/@types/enzyme/download/@types/enzyme-3.1.14.tgz#379c26205f6e0e272f3a51d6bbdd50071a9d03a6"
@@ -2526,6 +2530,10 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
+
+classname@^0.0.0:
+  version "0.0.0"
+  resolved "http://registry.npm.taobao.org/classname/download/classname-0.0.0.tgz#43d171b484e354c7a293a5b78004df6852db20d6"
 
 classnames@2.x, classnames@^2.2.0, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classnames@^2.2.6, classnames@~2.2.0:
   version "2.2.6"

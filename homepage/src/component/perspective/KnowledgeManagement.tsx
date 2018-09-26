@@ -11,7 +11,7 @@ export default class KnowledgeManagement extends React.PureComponent {
       <Parallax bgImage={bgImg} strength={500}>
         <div style={{ height: 500 }}>
           <PerspectiveCard
-            title="Web 与大前端"
+            title="知识管理"
             style={{
               position: 'absolute',
               top: '50%',
