@@ -21,7 +21,7 @@ const moduleCSSLoader = {
 const fontsOptions = {
   limit: 8192,
   mimetype: 'application/font-woff',
-  name: 'fonts/[name].[ext]'
+  name: 'font/[name].[ext]'
 };
 
 module.exports = {
@@ -29,11 +29,11 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.css'],
     alias: {
-      'x-apis/*': path.resolve(__dirname, 'src', 'api'),
-      'x-components/*': path.resolve(__dirname, 'src', 'component'),
-      'x-containers/*': path.resolve(__dirname, 'src', 'container'),
-      'x-models/*': path.resolve(__dirname, 'src', 'model'),
-      'x-stores/*': path.resolve(__dirname, 'src', 'store'),
+      'x-api/*': path.resolve(__dirname, 'src', 'api'),
+      'x-component/*': path.resolve(__dirname, '../', 'src', 'component'),
+      'x-container/*': path.resolve(__dirname, 'src', 'container'),
+      'x-model/*': path.resolve(__dirname, 'src', 'model'),
+      'x-store/*': path.resolve(__dirname, 'src', 'store'),
       'x-service/*': path.resolve(__dirname, 'src', 'service')
     }
   },
@@ -67,7 +67,7 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 8192,
-              name: 'images/[name].[ext]'
+              name: 'image/[name].[ext]'
             }
           }
         ]
@@ -93,7 +93,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
-        include: [/node_modules/, PATHS.src]
+        include: [/node_module/, PATHS.src]
       },
       {
         test: /\.less$/,
@@ -106,7 +106,7 @@ module.exports = {
 
       {
         test: /\.wasm$/,
-        exclude: /node_modules/,
+        exclude: /node_module/,
         loader: 'wasm-loader'
       }
     ]

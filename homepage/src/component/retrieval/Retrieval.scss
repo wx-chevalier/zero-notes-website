@@ -1,0 +1,14 @@
+.retrieval {
+  &-search-box {
+    .stats {
+      height: 40px;
+
+      display: flex;
+      align-items: center;
+
+      .ais-Stats {
+        margin-right: 16px;
+      }
+    }
+  }
+}

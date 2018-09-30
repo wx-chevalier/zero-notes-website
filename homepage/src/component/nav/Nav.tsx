@@ -1,5 +1,7 @@
-import { Menu, Anchor, Icon } from 'antd';
+import { Menu, Anchor, Icon, Drawer } from 'antd';
 import * as React from 'react';
+
+import Retrieval from '../retrieval/Retrieval';
 
 import './Nav.scss';
 
@@ -8,6 +10,96 @@ const { Link } = Anchor;
 const prefix = 'nav';
 
 export default class Nav extends React.Component {
+  state = {
+    isRetrievalDrawerVisible: false
+  };
+
+  renderLeft() {
+    return (
+      <div className="left">
+        <div className="logo" />
+        <Menu
+          theme="dark"
+          mode="horizontal"
+          defaultSelectedKeys={['home']}
+          style={{ lineHeight: '64px' }}
+        >
+          <Menu.Item key="home">
+            <div className="menu-item">
+              <span>xCompass</span>
+              <span>个人主页</span>
+            </div>
+          </Menu.Item>
+          <Menu.Item key="perspective">
+            <div className="menu-item">
+              <Link
+                title={
+                  <React.Fragment>
+                    <span>Perspective</span>
+                    <span>技术视野</span>
+                  </React.Fragment>
+                }
+                href="#perspective"
+              />
+            </div>
+          </Menu.Item>
+          <Menu.Item key="lab">
+            <div className="menu-item">
+              <Link
+                title={
+                  <React.Fragment>
+                    <span>Lab</span>
+                    <span>实验室</span>
+                  </React.Fragment>
+                }
+                href="#lab"
+              />
+            </div>
+          </Menu.Item>
+          <Menu.Item key="showcase">
+            <div className="menu-item">
+              <Link
+                title={
+                  <React.Fragment>
+                    <span>Repos Showcase</span>
+                    <span>仓库展廊</span>
+                  </React.Fragment>
+                }
+                href="#lab"
+              />
+            </div>
+          </Menu.Item>
+        </Menu>
+      </div>
+    );
+  }
+
+  renderToolbar() {
+    const { isRetrievalDrawerVisible } = this.state;
+
+    return (
+      <section className="toolbar-container">
+        <div
+          className="toolbar"
+          onClick={() => {
+            this.setState({ isRetrievalDrawerVisible: true });
+          }}
+        >
+          <span>知识检索</span>
+          <Icon type="search" theme="outlined" />
+        </div>
+        <Drawer
+          visible={isRetrievalDrawerVisible}
+          width={1000}
+          onClose={() => {
+            this.setState({ isRetrievalDrawerVisible: false });
+          }}
+        >
+          <Retrieval />
+        </Drawer>
+      </section>
+    );
+  }
   render() {
     return (
       <div className={prefix}>
@@ -31,28 +123,9 @@ export default class Nav extends React.Component {
             />
           </svg>
         </a>
-        <div className="left">
-          <div className="logo" />
-          <Menu
-            theme="dark"
-            mode="horizontal"
-            defaultSelectedKeys={['home']}
-            style={{ lineHeight: '64px' }}
-          >
-            <Menu.Item key="home">
-              <div className="menu-item">
-                <span>xCompass</span>
-                <span>个人主页</span>
-              </div>
-            </Menu.Item>
-            <Menu.Item key="mindmap">
-              <a href="/gh-craft" target="__blank">
-                <div className="menu-item">
-                  <span>Knowledge Graph</span>
-                  <span>知识图谱</span>
-                </div>
-              </a>
-            </Menu.Item>
+        {this.renderLeft()}
+        <div className="right">
+          <Menu theme="dark" mode="horizontal" selectable={false} style={{ lineHeight: '64px' }}>
             <Menu.Item key="roadmap">
               <a href="/gh-craft" target="__blank">
                 <div className="menu-item">
@@ -68,36 +141,6 @@ export default class Nav extends React.Component {
                   <span>藏书阁</span>
                 </div>
               </a>
-            </Menu.Item>
-          </Menu>
-        </div>
-        <div className="right">
-          <Menu theme="dark" mode="horizontal" selectable={false} style={{ lineHeight: '64px' }}>
-            <Menu.Item key="perspective">
-              <div className="menu-item">
-                <Link
-                  title={
-                    <React.Fragment>
-                      <span>Perspective</span>
-                      <span>视野</span>
-                    </React.Fragment>
-                  }
-                  href="#perspective"
-                />
-              </div>
-            </Menu.Item>
-            <Menu.Item key="lab">
-              <div className="menu-item">
-                <Link
-                  title={
-                    <React.Fragment>
-                      <span>Lab</span>
-                      <span>实验室</span>
-                    </React.Fragment>
-                  }
-                  href="#lab"
-                />
-              </div>
             </Menu.Item>
             <Menu.Item key="gh-craft">
               <a href="/gh-craft" target="__blank">
@@ -115,26 +158,10 @@ export default class Nav extends React.Component {
                 </div>
               </a>
             </Menu.Item>
-            <Menu.Item key="4">
-              <div className="menu-item">
-                <Link
-                  title={
-                    <React.Fragment>
-                      <span>Links</span>
-                      <span>链接</span>
-                    </React.Fragment>
-                  }
-                  href="#links"
-                />
-              </div>
-            </Menu.Item>
           </Menu>
         </div>
         {/* 浮动工具条 */}
-        <div className="toolbar">
-          <span>知识检索</span>
-          <Icon type="search" theme="outlined" />
-        </div>
+        {this.renderToolbar()}
       </div>
     );
   }

@@ -33,7 +33,7 @@ export default class IFooter extends React.Component {
               label="知乎专栏"
             />
             <Item
-              imgSrc="https://static.segmentfault.com/v-5ba9f196/global/img/favicon.ico"
+              imgSrc="https://user-images.githubusercontent.com/5803001/46254577-04ebda80-c4c4-11e8-86e4-ab4f71bbf2b0.png"
               href="https://segmentfault.com/blog/wxyyxc1992"
               label="SegmentFault"
             />

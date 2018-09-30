@@ -51,12 +51,21 @@
   }
 
   .toolbar {
-    position: fixed;
-    width: 40px;
-    height: 110px;
+    &-container {
+      position: fixed;
+      width: 40px;
+      height: 110px;
 
-    right: -2px;
-    top: 30vh;
+      right: -2px;
+      top: 30vh;
+
+      transition: all 500ms ease;
+
+      &:hover {
+        transform: translateX(-2px);
+      }
+    }
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,12 +82,6 @@
 
     > i {
       zoom: 1.4;
-    }
-
-    transition: all 500ms ease;
-
-    &:hover {
-      transform: translateX(-2px);
     }
   }
 }
