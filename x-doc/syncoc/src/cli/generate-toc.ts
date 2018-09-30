@@ -1,4 +1,4 @@
-import { generateToc } from '../service/local/generateToc';
+import { generateToc } from '../service/toc/generateTocFromLocal';
 const os = require('os');
 const program = require('commander');
 

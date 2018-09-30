@@ -1,14 +1,16 @@
 {
   "name": "toc",
   "version": "1.0.0",
-  "description": "",
+  "description": "doc sync & index",
   "main": "index.js",
   "scripts": {
+    "ts": "ts-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "wxyyxc1992@github",
   "license": "ISC",
   "dependencies": {
+    "algoliasearch": "^3.30.0",
     "chalk": "^2.1.0",
     "commander": "^2.11.0",
     "debug": "^3.1.0",
@@ -17,10 +19,13 @@
     "html-to-text": "^3.3.0",
     "isomorphic-fetch": "^2.2.1",
     "markdown-toc": "^1.2.0",
+    "md5": "^2.2.1",
     "puppeteer": "^0.11.0",
     "walk-sync": "^0.3.2"
   },
   "devDependencies": {
-    "@types/node": "^8.0.31"
+    "@types/node": "^8.0.31",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.1"
   }
 }

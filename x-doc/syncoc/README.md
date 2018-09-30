@@ -1,15 +1,6 @@
-# Docs Tool
-
-* Awesome Reference
+# syncoc, 文档工具
 
 ```sh
-# 数据同步
-$ ts-node src/cli/note.ts -t sync -r Awesome-Reference
-
-# 目录生成，使用本地方式
-$ ts-node src/cli/note.ts -r Awesome-Reference
+# 建立索引
+$ npm run ts ./src/cli/build-index.ts
 ```
-
-# About
-
-## OpenSource

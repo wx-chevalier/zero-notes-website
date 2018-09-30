@@ -20,7 +20,15 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "x-api/*": ["src/api/*"],
+      "x-component/*": ["src/component/*"],
+      "x-container/*": ["src/container/*"],
+      "x-model/*": ["src/model/*"],
+      "x-store/*": ["src/store/*"],
+      "x-service/*": ["src/service/*"]
+    }
   },
   "include": ["**/*.js", "**/*.ts", "**/*.tsx"],
   "exclude": ["assets", "node_modules", "dist", "build", "test", "dev-config", "ssr", "stories"]

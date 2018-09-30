@@ -32,8 +32,7 @@ export async function generateFileTree(parentDirectory: string) {
       if (segment.endsWith('.md')) {
         // 这里的 segment 等价于文件名
         let h1s: string[] = await readMarkdownHeadersFromFile(
-          parentDirectory + '/' + path,
-          segment
+          parentDirectory + '/' + path
         );
 
         obj.files.push({
@@ -75,10 +74,7 @@ export async function generateFileTree(parentDirectory: string) {
  * @param path 文件路径
  * @param fileName 文件名
  */
-export function readMarkdownHeadersFromFile(
-  path: string,
-  fileName: string
-): Promise<string[]> {
+export function readMarkdownHeadersFromFile(path: string): Promise<string[]> {
   return new Promise((resolve, reject) => {
     let headers: string[] = [];
 

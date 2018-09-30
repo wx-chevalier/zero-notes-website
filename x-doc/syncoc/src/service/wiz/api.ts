@@ -3,11 +3,11 @@ export const setUp = page => {
     const Host = 'https://note.wiz.cn';
 
     /**
-         * Description 通用抓取函数
-         * @param {string} path
-         * @param queryParams
-         * @return {Promise<T>}
-         */
+     * Description 通用抓取函数
+     * @param {string} path
+     * @param queryParams
+     * @return {Promise<T>}
+     */
     function get(path, queryParams = {}) {
       const finalQueryParams = Object.assign(
         {},
@@ -44,10 +44,10 @@ export const setUp = page => {
     window['get'] = get;
 
     /**
-       * 从原始的 HTML 中提取出内容
-       * @param rawHTML
-       * @param br
-       */
+     * 从原始的 HTML 中提取出内容
+     * @param rawHTML
+     * @param br
+     */
     function extractContent(rawHTML: string, br: string) {
       const container = document.createElement('div');
 

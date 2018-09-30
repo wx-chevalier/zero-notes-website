@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "x-api/*": ["src/api/*"],
+      "x-component/*": ["src/component/*"],
+      "x-container/*": ["src/container/*"],
+      "x-model/*": ["src/model/*"],
+      "x-store/*": ["src/store/*"],
+      "x-service/*": ["src/service/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

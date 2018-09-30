@@ -1,17 +1,17 @@
 import * as React from 'react';
 import { Parallax } from 'react-parallax';
-import PerspectiveCard from '../shared/card/PerspectiveCard';
+import PerspectiveCard from '../../shared/card/PerspectiveCard';
 
 const bgImg =
-  'https://user-images.githubusercontent.com/5803001/44896692-a51adc00-ad2b-11e8-9be9-ac495c77932e.png';
+  'https://user-images.githubusercontent.com/5803001/43364904-59f5bda6-9356-11e8-9ab3-ae073d08bb9e.png';
 
-export default class Web extends React.PureComponent {
+export default class KnowledgeManagement extends React.PureComponent {
   render() {
     return (
       <Parallax bgImage={bgImg} strength={500}>
         <div style={{ height: 500 }}>
           <PerspectiveCard
-            title="Web 与大前端"
+            title="知识管理"
             style={{
               position: 'absolute',
               top: '50%',

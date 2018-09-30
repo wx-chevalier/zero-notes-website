@@ -27,8 +27,17 @@ const fontsOptions = {
 module.exports = {
   context: path.resolve(__dirname, '../'),
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.css']
+    extensions: ['.ts', '.tsx', '.js', '.css'],
+    alias: {
+      'x-apis/*': path.resolve(__dirname, 'src', 'api'),
+      'x-components/*': path.resolve(__dirname, 'src', 'component'),
+      'x-containers/*': path.resolve(__dirname, 'src', 'container'),
+      'x-models/*': path.resolve(__dirname, 'src', 'model'),
+      'x-stores/*': path.resolve(__dirname, 'src', 'store'),
+      'x-service/*': path.resolve(__dirname, 'src', 'service')
+    }
   },
+
   entry: {
     app: path.resolve(PATHS.src, './index.tsx')
   },

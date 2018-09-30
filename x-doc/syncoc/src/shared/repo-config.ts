@@ -22,91 +22,40 @@ const baseLocalDir = '/Users/apple/Workspace/Repos/Docs';
 
 // 所有仓库的声明
 const repos: { [key: string]: ReposityConfig } = {
-  // Coder-Knowledge-Management
-
-  'Awesome-Reference': {
-    description: 'Awesome-Reference',
-    sUrl: 'https://parg.co/b4z',
+  'Awesome-Links': {
+    description:
+      'Awesome Links, Guide to Galaxy, curated, worthy and up-to-date links/reading list for ITCS-Coding/Algorithm/SoftwareArchitecture/AI. ITCS-编程/算法/软件架构/人工智能等领域的文章/书籍/资料/项目链接精选，岁月沉淀的美好',
+    sUrl: 'https://github.com/wxyyxc1992/Awesome-Links',
     chapterHeader: 'https://parg.co/UGo',
     depth: 2,
-    localPath: `${baseLocalDir}/Awesome-Reference`
+    localPath: `${baseLocalDir}/Awesome-Links`
   },
 
   'Awesome-CheatSheet': {
-    description: 'Awesome-CheatSheet',
-    sUrl: 'https://parg.co/UCH',
+    description:
+      'Awesome-CheatSheet, :books: Ultimate CheatSheets(Tutorials&MindMap), overview of syntax, features and practical tips, collection of useful code snippets, go from zero to hero at fly. :dizzy:  干货满满的全栈开发速学速查手册集锦',
+    sUrl: 'https://github.com/wxyyxc1992/Awesome-CheatSheet',
     chapterHeader: 'https://parg.co/UCb',
     depth: 2,
     localPath: `${baseLocalDir}/Awesome-CheatSheet`
   },
 
-  // ProgrammingLanguage-Series
-
-  'Modern-JavaScript-Development-Foundation': {
-    description: '现代 JavaScript 开发：语法基础与工程实践',
-    sUrl: 'https://parg.co/bxN',
+  'ProgrammingLanguage-Series': {
+    description:
+      ':books: 编程语言语法基础与工程实践，JavaScript | Java | Python | Go | Rust | CPP | Swift',
+    sUrl: 'https://github.com/wxyyxc1992/ProgrammingLanguage-Series',
     chapterHeader: 'https://parg.co/USw',
     depth: 1,
-    localPath: `${baseLocalDir}/ProgrammingLanguage-Series/JavaScript/Modern-JavaScript-Development-Foundation`
+    localPath: `${baseLocalDir}/ProgrammingLanguage-Series`
   },
 
-  // Web-Development-And-Engineering-Practices
-
-  'Modern-Web-Development-Foundation': {
-    description: '现代 Web 开发基础',
-    sUrl: 'https://parg.co/UHU',
+  'Web-Series': {
+    description:
+      ':books: 现代 Web 开发，现代 Web 开发导论 | 基础篇 | 进阶篇 | 架构优化篇 | React 篇 | Vue 篇',
+    sUrl: 'https://github.com/wxyyxc1992/Web-Series',
     chapterHeader: 'https://parg.co/U0y',
     depth: 1,
-    localPath: `${baseLocalDir}/Web-Development-And-Engineering-Practices/Modern-Web-Development-Foundation`
-  },
-
-  'Modern-Web-Engineering-Practices': {
-    description: '现代 Web 开发工程化实践',
-    sUrl: 'https://parg.co/Ubt',
-    chapterHeader: 'https://parg.co/UYp',
-    depth: 1,
-    localPath: `${baseLocalDir}/Web-Development-And-Engineering-Practices/Modern-Web-Engineering-Practices'`
-  },
-
-  'Modern-Web-Application-Architecture-And-Performance-Optimization': {
-    description: '现代 Web 应用架构与性能调优',
-    sUrl: 'https://parg.co/UGZ',
-    chapterHeader: 'https://parg.co/US3',
-    depth: 1,
-    localPath: `${baseLocalDir}/Web-Development-And-Engineering-Practices/Modern-Web-Application-Architecture-And-Performance-Optimization`
-  },
-
-  'React-And-Frontend-Engineering': {
-    description: 'React 与前端工程化实践',
-    sUrl: 'https://parg.co/U0I',
-    chapterHeader: 'https://parg.co/UY3',
-    depth: 1,
-    localPath: `${baseLocalDir}/Web-Development-And-Engineering-Practices/React-And-Frontend-Engineering`
-  },
-
-  'Vue-And-Frontend-Engineering': {
-    description: 'Vue.js 与前端工程化实践',
-    sUrl: 'https://parg.co/bWF',
-    chapterHeader: 'https://parg.co/U01',
-    depth: 1,
-    localPath: `${baseLocalDir}/Web-Development-And-Engineering-Practices/Vue-And-Frontend-Engineering`
-  },
-
-  // ﻿ServerSideApplication-Development-And-System-Architecture
-
-  'ServerSide-Application-Development-Fundamentals': {
-    description: '服务端应用程序开发基础',
-    sUrl: 'https://parg.co/UdT',
-    chapterHeader: 'https://parg.co/Udx',
-    depth: 1,
-    localPath: `${baseLocalDir}/ServerSideApplication-Development-And-System-Architecture/ServerSide-Application-Development-Fundamentals`
-  },
-
-  'Head-First-Full-Stack-Node.js': {
-    description: '深入浅出 Node.js 全栈架构',
-    sUrl: 'https://parg.co/b2s',
-    chapterHeader: 'https://parg.co/UGX',
-    depth: 1
+    localPath: `${baseLocalDir}/Web-Series`
   }
 };
 
