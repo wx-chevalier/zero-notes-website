@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Particles from 'react-particles-js';
 
-import './OrgMindMap.scss';
+import './Lab.scss';
 
-const prefix = 'org-mind-map';
+const prefix = 'lab';
 
-export default class OrgMindMap extends React.Component {
+export default class Lab extends React.Component {
   render() {
     return (
       <section className={prefix}>

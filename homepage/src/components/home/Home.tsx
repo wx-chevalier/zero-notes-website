@@ -1,24 +1,29 @@
 import * as React from 'react';
 
+import { HDivider } from '../shared/decorator/HDivider';
+import Lab from './lab/Lab';
 import Banner from './banner/Banner';
+import Showcase from './showcase/Showcase';
 import Perspective from './perspective/Perspective';
-import OrgMindMap from '../mindmap/OrgMindMap';
 
 export default class Home extends React.PureComponent {
   render() {
     return (
       <section>
         <Banner />
-        <h1>| | |</h1>
+        <HDivider />
         <div id="perspective">
           <Perspective />
         </div>
-        <h1>| | |</h1>
-        <div id="lab" />
-        <div id="org">
-          <OrgMindMap />
+        <HDivider />
+        <div id="lab">
+          <Lab />
         </div>
-        <h1>| | |</h1>
+        <HDivider />
+        <div id="showcase">
+          <Showcase />
+        </div>
+        <HDivider />
       </section>
     );
   }

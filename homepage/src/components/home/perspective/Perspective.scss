@@ -1,0 +1,52 @@
+.perspective {
+  height: 600px;
+  position: relative;
+
+  background: url('https://user-images.githubusercontent.com/5803001/46271198-08dc3300-c57e-11e8-90ee-df0584d757ff.png');
+  background-size: 110vw 800px;
+
+  animation: background-flow 20s infinite ease both;
+
+  &-toolbar {
+    position: absolute;
+    left: 1vw;
+    top: 1vh;
+
+    color: white;
+    cursor: pointer;
+  }
+
+  &-mindmap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 500px;
+    }
+  }
+}
+
+@keyframes background-flow {
+  0% {
+    background-position-x: 0vw;
+    background-position-y: 0px;
+  }
+  25% {
+    background-position-x: -5vw;
+    background-position-y: -50px;
+  }
+  50% {
+    background-position-x: -10vw;
+    background-position-y: -100px;
+  }
+  75% {
+    background-position-x: -5vw;
+    background-position-y: -50px;
+  }
+  100% {
+    background-position-x: 0vw;
+    background-position-y: 0px;
+  }
+}

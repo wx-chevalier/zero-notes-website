@@ -10525,7 +10525,7 @@ style-loader@^0.20.3:
     loader-utils "^1.1.0"
     schema-utils "^0.4.5"
 
-styled-components@^3.2.6:
+styled-components@^3.4.9:
   version "3.4.9"
   resolved "http://registry.npm.taobao.org/styled-components/download/styled-components-3.4.9.tgz#519abeb351b37be5b7de6a15ff9e4efeb9d772da"
   dependencies:

@@ -65,7 +65,7 @@ export default class Nav extends React.Component {
                     <span>仓库展廊</span>
                   </React.Fragment>
                 }
-                href="#lab"
+                href="#showcase"
               />
             </div>
           </Menu.Item>
@@ -127,7 +127,7 @@ export default class Nav extends React.Component {
         <div className="right">
           <Menu theme="dark" mode="horizontal" selectable={false} style={{ lineHeight: '64px' }}>
             <Menu.Item key="roadmap">
-              <a href="/gh-craft" target="__blank">
+              <a href="https://github.com/wxyyxc1992/Coder-Roadmap" target="__blank">
                 <div className="menu-item">
                   <span>Coder Roadmap</span>
                   <span>路线图</span>
@@ -135,7 +135,7 @@ export default class Nav extends React.Component {
               </a>
             </Menu.Item>
             <Menu.Item key="books">
-              <a href="/gh-craft" target="__blank">
+              <a href="https://github.com/wxyyxc1992/Awesome-CS-Books-Warehouse" target="__blank">
                 <div className="menu-item">
                   <span>Books Warehouse</span>
                   <span>藏书阁</span>

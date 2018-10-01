@@ -1,4 +1,4 @@
-import { sum } from '../../src/service/utils';
+import { sum } from '../../src/services/utils';
 
 describe('test', () => {
   it('adds 1 + 2 to equal 3 in TScript', () => {

@@ -1,5 +1,6 @@
-import { Divider } from 'antd';
 import * as React from 'react';
+
+import { HDivider } from '../../shared/decorator/HDivider';
 
 import KnowledgeManagement from './KnowledgeManagement';
 import SoftwareEngineering from './SoftwareEngineering';
@@ -8,20 +9,20 @@ import SSA from './SSA';
 import Infrastructure from './Infrastructure';
 import AI from './AI';
 
-export default class Perspective extends React.PureComponent {
+export default class Showcase extends React.PureComponent {
   render() {
     return (
       <section>
         <KnowledgeManagement />
-        <Divider />
+        <HDivider />
         <SoftwareEngineering />
-        <Divider />
+        <HDivider />
         <Web />
-        <Divider />
+        <HDivider />
         <SSA />
-        <Divider />
+        <HDivider />
         <Infrastructure />
-        <Divider />
+        <HDivider />
         <AI />
       </section>
     );

@@ -50,7 +50,7 @@ htmlWebpackPlugin.options.scripts = htmlWebpackPlugin.options.scripts || []
     if (htmlWebpackPlugin.options.headHtmlSnippet) { %>
     <%= htmlWebpackPlugin.options.headHtmlSnippet %><%
     } %>
-    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script src="https://as.alipayobjects.com/g/components/fastclick/1.0.6/fastclick.js"></script>
     <script>
       if ('addEventListener' in document) {
         document.addEventListener('DOMContentLoaded', function() {
@@ -58,7 +58,7 @@ htmlWebpackPlugin.options.scripts = htmlWebpackPlugin.options.scripts || []
         }, false);
       }
       if(!window.Promise) {
-        document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+        document.writeln('<script src="https://as.alipayobjects.com/g/components/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
       }
     </script>
     <style>

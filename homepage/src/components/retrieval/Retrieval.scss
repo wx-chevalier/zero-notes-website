@@ -1,4 +1,11 @@
 .retrieval {
+  &-header {
+    display: flex;
+
+    h2 {
+      margin-right: 16px;
+    }
+  }
   &-search-box {
     .stats {
       height: 40px;

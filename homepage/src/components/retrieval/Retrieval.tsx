@@ -23,8 +23,14 @@ export default class Retrieval extends React.PureComponent {
   render() {
     return (
       <section className={prefix}>
-        <h2>知识检索</h2>
-        <Divider />
+        <div className={`${prefix}-header`}>
+          <h2>Knowledge Retrieval | 知识检索</h2>
+          <img
+            src="https://www.algolia.com/assets/pricing_new/algolia-powered-by-2ab4dcc4def7b9fe7dfc1fd8eef1da99.svg"
+            alt=""
+          />
+        </div>
+        <Divider style={{ margin: '8px 0 16px 0' }} />
         <InstantSearch appId="35UOMI84K6" apiKey="632bd8009b7260d30a352e9d9b14d552" indexName="doc">
           <Configure
             hitsPerPage={10}

@@ -5,11 +5,11 @@
     "baseUrl": "./",
     "paths": {
       "x-api/*": ["src/api/*"],
-      "x-component/*": ["src/component/*"],
+      "x-component/*": ["src/components/*"],
       "x-container/*": ["src/container/*"],
       "x-model/*": ["src/model/*"],
       "x-store/*": ["src/store/*"],
-      "x-service/*": ["src/service/*"]
+      "x-service/*": ["src/services/*"]
     }
   },
   "exclude": ["node_modules", "dist"]

@@ -2,9 +2,9 @@ import { Layout, BackTop, Anchor } from 'antd';
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 
-import IFooter from '../component/footer/IFooter';
-import Nav from '../component/nav/Nav';
-import Home from '../component/home/Home';
+import IFooter from '../components/footer/IFooter';
+import Nav from '../components/nav/Nav';
+import Home from '../components/home/Home';
 
 import './App.scss';
 
