@@ -24,11 +24,11 @@
     "baseUrl": ".",
     "paths": {
       "x-api/*": ["src/api/*"],
-      "x-component/*": ["src/components/*"],
-      "x-container/*": ["src/container/*"],
-      "x-model/*": ["src/model/*"],
-      "x-store/*": ["src/store/*"],
-      "x-service/*": ["src/services/*"]
+      "x-components/*": ["src/components/*"],
+      "x-containers/*": ["src/containers/*"],
+      "x-models/*": ["src/models/*"],
+      "x-stores/*": ["src/stores/*"],
+      "x-services/*": ["src/services/*"]
     }
   },
   "include": ["**/*.js", "**/*.ts", "**/*.tsx"],

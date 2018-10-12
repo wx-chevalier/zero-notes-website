@@ -1,18 +1,36 @@
 import { Menu, Anchor, Icon, Drawer } from 'antd';
 import * as React from 'react';
+import { inject, observer } from 'mobx-react';
 
 import Retrieval from '../retrieval/Retrieval';
 
 import './Nav.scss';
+import { RouterStore } from 'mobx-react-router';
 
 const { Link } = Anchor;
 
 const prefix = 'nav';
 
-export default class Nav extends React.Component {
+interface Props {
+  routerStore?: RouterStore;
+}
+
+@inject('routerStore')
+@observer
+export default class Nav extends React.Component<Props> {
   state = {
     isRetrievalDrawerVisible: false
   };
+
+  componentDidMount() {
+    const { pathname } = this.props.routerStore!.location;
+
+    if (pathname === '/search') {
+      this.setState({
+        isRetrievalDrawerVisible: true
+      });
+    }
+  }
 
   renderLeft() {
     return (

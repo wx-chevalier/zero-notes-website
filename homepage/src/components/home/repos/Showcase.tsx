@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { HDivider } from '../../shared/decorator/HDivider';
+import { HDivider } from '../../common/decorator/HDivider';
 
 import KnowledgeManagement from './KnowledgeManagement';
 import SoftwareEngineering from './SoftwareEngineering';

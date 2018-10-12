@@ -6,6 +6,77 @@
       margin-right: 16px;
     }
   }
+
+  &-search {
+    display: flex;
+
+    > .left {
+      margin-right: 16px;
+      min-width: 250px;
+    }
+
+    > .right {
+      width: 690px;
+
+      .ais-Hits-list {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .ais-Hits-item {
+        width: 690px;
+      }
+
+      .ais-Pagination {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &-refinements {
+    .refinement {
+      height: auto;
+      background: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.4);
+      margin-bottom: 16px;
+      padding: 16px;
+    }
+
+    .ais-SearchBox-input {
+      border: none;
+      border-bottom: 1px solid #c4c8d8;
+      padding-bottom: 5px;
+      border-radius: 0px;
+      font-size: 14px;
+    }
+
+    ul.ais-RefinementList-list {
+      max-height: 300px;
+      overflow: auto;
+    }
+
+    .ais-RefinementList-label {
+      height: 20px;
+      .ais-RefinementList-labelText {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .ais-RefinementList-checkbox {
+        margin-right: 16px;
+      }
+      .ais-RefinementList-count {
+        background: none;
+        padding: 0;
+        font-size: 12px;
+        line-height: 24px;
+        color: #999;
+        float: right;
+      }
+    }
+  }
+
   &-search-box {
     .stats {
       height: 40px;
@@ -15,6 +86,62 @@
 
       .ais-Stats {
         margin-right: 16px;
+      }
+    }
+  }
+
+  &-hit {
+    display: flex;
+
+    > .left {
+      flex: 150px 0 0;
+      padding: 0px 8px;
+      height: 100%;
+
+      .repo {
+        margin: 8px 0px;
+      }
+    }
+
+    > .right {
+      flex: 1px 1 1;
+
+      .title {
+        display: flex;
+        align-items: center;
+
+        .ais-Highlight {
+          width: 100px;
+          margin-right: 16px;
+        }
+
+        .fileName {
+          display: inline-block;
+
+          flex: 150px 0 0;
+
+          span.antd-pro-ellipsis-ellipsis {
+            font-size: 16px;
+            color: #1890ff;
+          }
+        }
+
+        > span,
+        .antd-pro-ellipsis-ellipsis {
+          color: rgba(0, 0, 0, 0.65);
+          font-size: 14px;
+        }
+      }
+
+      .content {
+        max-height: 130px;
+        overflow: auto;
+        color: rgba(0, 0, 0, 0.45);
+        word-break: break-all;
+
+        .ais-Highlight-nonHighlighted {
+          font-size: 12px;
+        }
       }
     }
   }

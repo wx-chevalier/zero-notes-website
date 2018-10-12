@@ -57,4 +57,6 @@ const config = {
 
 delete config.extra;
 
+console.log(config);
+
 module.exports = config;

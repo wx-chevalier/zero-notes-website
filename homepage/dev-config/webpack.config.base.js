@@ -24,17 +24,19 @@ const fontsOptions = {
   name: 'font/[name].[ext]'
 };
 
+console.log(path.resolve(__dirname, '../', 'src', 'components'));
+
 module.exports = {
   context: path.resolve(__dirname, '../'),
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.css'],
     alias: {
-      'x-api/*': path.resolve(__dirname, 'src', 'api'),
-      'x-component/*': path.resolve(__dirname, '../', 'src', 'component'),
-      'x-container/*': path.resolve(__dirname, 'src', 'container'),
-      'x-model/*': path.resolve(__dirname, 'src', 'model'),
-      'x-store/*': path.resolve(__dirname, 'src', 'store'),
-      'x-service/*': path.resolve(__dirname, 'src', 'service')
+      'x-api': path.resolve(__dirname, '../', 'src', 'api/'),
+      'x-components': path.resolve(__dirname, '../', 'src', 'components/'),
+      'x-containers': path.resolve(__dirname, '../', 'src', 'containers/'),
+      'x-models': path.resolve(__dirname, '../', 'src', 'models/'),
+      'x-stores': path.resolve(__dirname, '../', 'src', 'stores/'),
+      'x-services': path.resolve(__dirname, '../', 'src', 'services/')
     }
   },
 
@@ -82,11 +84,25 @@ module.exports = {
         ]
       },
       {
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: [
           {
             loader: 'file-loader',
             options: fontsOptions
+          }
+        ]
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'babel-loader'
+          },
+          {
+            loader: 'react-svg-loader',
+            options: {
+              jsx: true // true outputs JSX tags
+            }
           }
         ]
       },

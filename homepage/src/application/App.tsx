@@ -2,6 +2,8 @@ import { Layout, BackTop, Anchor } from 'antd';
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 
+import 'ant-design-pro/dist/ant-design-pro.css'; // 统一引入样式
+
 import IFooter from '../components/footer/IFooter';
 import Nav from '../components/nav/Nav';
 import Home from '../components/home/Home';

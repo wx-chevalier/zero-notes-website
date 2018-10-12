@@ -89,5 +89,7 @@ Object.keys(repos).forEach(repoName => {
     } catch (e) {
       console.error(e);
     }
+
+    console.log(`${repoName} indexed finally.`);
   });
 });

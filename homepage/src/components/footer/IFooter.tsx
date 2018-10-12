@@ -80,6 +80,10 @@ export default class IFooter extends React.Component {
               href="https://github.com/wxyyxc1992/Awesome-Coder/tree/master/TechRoad/2017"
               label="2017-不忘初心，夯实基础，程序员的自我修养"
             />
+            <Item
+              href="https://github.com/wxyyxc1992/Awesome-Coder/tree/master/TechRoad/2018"
+              label="2018-数据浪潮之间的前端工程师"
+            />
           </Col>
           <Col span={4}>
             <h2>工具</h2>

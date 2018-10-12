@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Parallax } from 'react-parallax';
-import PerspectiveCard from '../../shared/card/PerspectiveCard';
+import PerspectiveCard from 'x-components/common/card/PerspectiveCard';
 
 const bgImg =
   'https://user-images.githubusercontent.com/5803001/44896692-a51adc00-ad2b-11e8-9be9-ac495c77932e.png';

@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import './Banner.scss';
+import GHCard from '../../../libs/react-gh-card/GHCard';
 
 const prefix = 'banner';
 
@@ -53,14 +54,7 @@ export default class Banner extends React.Component {
               alt="Just Coder, Travel in Galaxy"
             />
           </div>
-          <div>
-            <div
-              className="github-card"
-              data-github="wxyyxc1992"
-              data-width="350"
-              data-theme="medium"
-            />
-          </div>
+          <GHCard />
         </div>
       </section>
     );

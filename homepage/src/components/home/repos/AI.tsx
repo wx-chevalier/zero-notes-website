@@ -1,17 +1,17 @@
 import * as React from 'react';
 import { Parallax } from 'react-parallax';
-import PerspectiveCard from '../../shared/card/PerspectiveCard';
+import PerspectiveCard from 'x-components/common/card/PerspectiveCard';
 
 const bgImg =
-  'https://user-images.githubusercontent.com/5803001/45939297-0b7ddc00-c004-11e8-8b97-2312c6895b78.jpg';
+  'https://user-images.githubusercontent.com/5803001/44629093-c753d900-a97c-11e8-8c16-9d0e96b149aa.png';
 
-export default class SSA extends React.PureComponent {
+export default class AI extends React.PureComponent {
   render() {
     return (
       <Parallax bgImage={bgImg} strength={500}>
         <div style={{ height: 500 }}>
           <PerspectiveCard
-            title="服务端应用与微服务架构"
+            title="人工智能与机器学习"
             style={{
               position: 'absolute',
               top: '50%',

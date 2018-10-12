@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import { HDivider } from '../shared/decorator/HDivider';
+import { HDivider } from '../common/decorator/HDivider';
 import Lab from './lab/Lab';
 import Banner from './banner/Banner';
-import Showcase from './showcase/Showcase';
+import Showcase from './repos/Showcase';
 import Perspective from './perspective/Perspective';
 
 export default class Home extends React.PureComponent {
