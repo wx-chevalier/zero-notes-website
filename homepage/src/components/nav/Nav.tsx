@@ -108,7 +108,7 @@ export default class Nav extends React.Component<Props> {
         </div>
         <Drawer
           visible={isRetrievalDrawerVisible}
-          width={1000}
+          width={1200}
           onClose={() => {
             this.setState({ isRetrievalDrawerVisible: false });
           }}

@@ -1,4 +1,4 @@
-import { WIZ_PASSWORD, WIZ_USERNAME } from '../../shared/private';
+import { WIZ_PASSWORD, WIZ_USERNAME } from '../../config/private';
 
 export const login = async (browser: any) => {
   // DOM 元素选择器

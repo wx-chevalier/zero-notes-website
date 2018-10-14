@@ -1,12 +1,9 @@
-import { appendix } from '../../shared/dict';
-
 const puppeteer = require('puppeteer');
 const fs = require('fs-extra');
-const markdownToc = require('markdown-toc');
-import repos from '../../shared/repo-config';
+import repos from '../../config/repo-config';
 import { login } from './automation';
 import { setUp } from './api';
-import { LICENSE } from '../../shared/license';
+import { LICENSE } from '../../config/license';
 
 /**
  * Description 将为知笔记中的内容同步到指定目录
@@ -53,27 +50,28 @@ export function wizSync(
 
       // 依次遍历目录下的笔记
       let notes = await page.evaluate(async category => {
-        let { result: rawNotes } = await window[
-          'get'
-        ]('/ks/note/list/category/62f7d6c2-7c7c-4804-aa61-bb561897ba12', {
-          category,
-          withAbstract: false,
-          start: 0,
-          count: 200,
-          orderBy: 'modified',
-          ascending: 'desc',
-        });
+        let { result: rawNotes } = await window['get'](
+          '/ks/note/list/category/62f7d6c2-7c7c-4804-aa61-bb561897ba12',
+          {
+            category,
+            withAbstract: false,
+            start: 0,
+            count: 200,
+            orderBy: 'modified',
+            ascending: 'desc'
+          }
+        );
 
         let notes = [];
 
         for (let rawNote of rawNotes) {
-          let note = await window[
-            'get'
-          ](
-            `/ks/note/download/62f7d6c2-7c7c-4804-aa61-bb561897ba12/${rawNote.docGuid}`,
+          let note = await window['get'](
+            `/ks/note/download/62f7d6c2-7c7c-4804-aa61-bb561897ba12/${
+              rawNote.docGuid
+            }`,
             {
               downloadInfo: 1,
-              downloadData: 1,
+              downloadData: 1
             }
           );
 

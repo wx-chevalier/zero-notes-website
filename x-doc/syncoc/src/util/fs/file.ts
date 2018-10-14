@@ -1,4 +1,4 @@
-import { ignoreFilesOrDirs } from '../../shared/dict';
+import { ignoreFilesOrDirs } from '../../config/dict';
 import { formatToc } from '../markdown/md';
 import { FileTree } from './interface';
 

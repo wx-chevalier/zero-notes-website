@@ -56,6 +56,51 @@ const repos: { [key: string]: ReposityConfig } = {
     chapterHeader: 'https://parg.co/U0y',
     depth: 1,
     localPath: `${baseLocalDir}/Web-Series`
+  },
+
+  'AIDL-Series': {
+    description:
+      ':books: 现代 Web 开发，现代 Web 开发导论 | 基础篇 | 进阶篇 | 架构优化篇 | React 篇 | Vue 篇',
+    sUrl: 'https://github.com/wxyyxc1992/AIDL-Series',
+    chapterHeader: 'https://parg.co/U0y',
+    depth: 1,
+    localPath: `${baseLocalDir}/AIDL-Series`
+  },
+
+  'Backend-Series': {
+    description:
+      ':books: 现代 Web 开发，现代 Web 开发导论 | 基础篇 | 进阶篇 | 架构优化篇 | React 篇 | Vue 篇',
+    sUrl: 'https://github.com/wxyyxc1992/Backend-Series',
+    chapterHeader: 'https://parg.co/U0y',
+    depth: 1,
+    localPath: `${baseLocalDir}/Backend-Series`
+  },
+
+  'Distributed-Infrastructure-Series': {
+    description:
+      ':books: 现代 Web 开发，现代 Web 开发导论 | 基础篇 | 进阶篇 | 架构优化篇 | React 篇 | Vue 篇',
+    sUrl: 'https://github.com/wxyyxc1992/Distributed-Infrastructure-Series',
+    chapterHeader: 'https://parg.co/U0y',
+    depth: 1,
+    localPath: `${baseLocalDir}/Distributed-Infrastructure-Series`
+  },
+
+  'Frontend-Series': {
+    description:
+      ':books: 现代 Web 开发，现代 Web 开发导论 | 基础篇 | 进阶篇 | 架构优化篇 | React 篇 | Vue 篇',
+    sUrl: 'https://github.com/wxyyxc1992/Frontend-Series',
+    chapterHeader: 'https://parg.co/U0y',
+    depth: 1,
+    localPath: `${baseLocalDir}/Frontend-Series`
+  },
+
+  'SoftwareEngineering-Series': {
+    description:
+      ':books: 现代 Web 开发，现代 Web 开发导论 | 基础篇 | 进阶篇 | 架构优化篇 | React 篇 | Vue 篇',
+    sUrl: 'https://github.com/wxyyxc1992/SoftwareEngineering-Series',
+    chapterHeader: 'https://parg.co/U0y',
+    depth: 1,
+    localPath: `${baseLocalDir}/SoftwareEngineering-Series`
   }
 };
 

@@ -1,10 +1,10 @@
 import { FileDescriptor, FileTree } from '../../util/fs/interface';
 import { getH1sFromMDString } from '../../util/markdown/md';
-import { ignoreFilesOrDirs } from '../../shared/dict';
-import { GITHUB_PASSWORD, GITHUB_USERNAME } from '../../shared/private';
+import { ignoreFilesOrDirs } from '../../config/dict';
+import { GITHUB_PASSWORD, GITHUB_USERNAME } from '../../config/private';
 import {
   generateTocFromFileTree,
-  generateTocFromFileTreeWithSubHeader,
+  generateTocFromFileTreeWithSubHeader
 } from '../../util/fs/file';
 
 const fs = require('fs-extra');
@@ -13,7 +13,7 @@ const GitHub = require('github-api');
 
 const gh = new GitHub({
   username: GITHUB_USERNAME,
-  password: GITHUB_PASSWORD,
+  password: GITHUB_PASSWORD
 });
 
 // 全局变量，计算当前深度
@@ -68,7 +68,7 @@ async function dfsWalkToGenerateFileTree(repo, dir, path) {
   // 存放本仓库指定路径下的文件内容
   const fileTree: FileTree = {
     dirs: {},
-    files: [],
+    files: []
   };
 
   // 递归获取到所有的内容
@@ -91,7 +91,7 @@ async function dfsWalkToGenerateFileTree(repo, dir, path) {
         html_url: blob.html_url,
 
         // 文件内的一级目录
-        h1s: getH1sFromMDString(content),
+        h1s: getH1sFromMDString(content)
       });
 
       console.log(`已处理文件数：${handledNum++}`);

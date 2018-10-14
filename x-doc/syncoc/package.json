@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "algoliasearch": "^3.30.0",
+    "bloom-filters": "^0.5.2",
+    "bloomfilter": "^0.0.18",
     "chalk": "^2.1.0",
     "commander": "^2.11.0",
     "debug": "^3.1.0",
@@ -24,6 +26,8 @@
     "walk-sync": "^0.3.2"
   },
   "devDependencies": {
+    "@types/fs-extra": "^5.0.4",
+    "@types/md5": "^2.1.33",
     "@types/node": "^8.0.31",
     "ts-node": "^7.0.1",
     "typescript": "^3.1.1"

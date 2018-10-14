@@ -10,7 +10,7 @@ const fs = require('fs-extra');
 const readFileAsync = promisify(fs.readFile);
 const debug = require('debug')('generateToc');
 
-import { default as repos, ReposityConfig } from '../../shared/repo-config';
+import { default as repos, ReposityConfig } from '../../config/repo-config';
 
 export async function generateToc(repoName = 'Awesome-Reference') {
   // 获取仓库的配置信息

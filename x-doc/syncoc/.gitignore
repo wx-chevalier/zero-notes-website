@@ -61,5 +61,5 @@ typings/
 .env
 
 dist/
-/src/shared/private.ts
+/src/config/private.ts
 /toc.md
