@@ -22,29 +22,6 @@ const readFileAsync: (
   args: { encoding: string }
 ) => Promise<string> = promisify(fs.readFile);
 
-interface LinkItem {
-  objectID: string; // md5(href)
-
-  // 基本信息
-  title: string;
-  href: string;
-  // 描述
-  desc: string;
-
-  // 额外信息
-  year: number;
-  author: string;
-  version: string;
-  type: string;
-
-  // 文件名
-  fileName: string;
-  // 文件路径
-  fileHref: string;
-  // 从文件路径，以及文件名中获取到类目
-  categories: string[];
-}
-
 let count = 0;
 
 export async function buildLinkIndex(client) {
