@@ -1,3 +1,4 @@
+import { LinkType } from './../../shared/types';
 // https://github.com/jonschlinkert/markdown-toc#optionsmaxdepth
 
 import { FileDescriptor } from '../fs/interface';
@@ -30,4 +31,51 @@ export const formatToc = (file: FileDescriptor) => {
     / /g,
     '%20'
   )}): ${file.h1s[0] || ''} \n\n`;
+};
+
+export const extractInfoFromTitle = (title: string) => {
+  const result = {
+    year: '未知',
+    title,
+    type: LinkType.Article
+  };
+
+  const TitleWithYearAndTypeRegex = /(\d{4})-(.*)\s#(.*)#/;
+
+  let match = title.match(TitleWithYearAndTypeRegex);
+
+  if (match) {
+    return {
+      ...result,
+      year: match[1],
+      title: match[2],
+      type: LinkType[match[3]]
+    };
+  }
+
+  const TitleWithYearRegex = /(\d{4})-(.*)/;
+
+  match = title.match(TitleWithYearRegex);
+
+  if (match) {
+    return {
+      ...result,
+      year: match[1],
+      title: match[2]
+    };
+  }
+
+  const TitleWithTypeRegex = /^([^\d]*)\s#(.*)#/;
+
+  match = title.match(TitleWithTypeRegex);
+
+  if (match) {
+    return {
+      ...result,
+      title: match[1],
+      type: LinkType[match[2]]
+    };
+  }
+
+  return result;
 };

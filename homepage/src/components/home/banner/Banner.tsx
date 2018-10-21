@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import './Banner.scss';
-import GHCard from '../../../libs/react-gh-card/GHCard';
+import GHCard from '../../../libs/react-gh-card/GHUserCard';
 
 const prefix = 'banner';
 

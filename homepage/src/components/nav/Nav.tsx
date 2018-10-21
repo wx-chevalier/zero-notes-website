@@ -79,11 +79,11 @@ export default class Nav extends React.Component<Props> {
               <Link
                 title={
                   <React.Fragment>
-                    <span>Repos Showcase</span>
-                    <span>仓库展廊</span>
+                    <span>Knowledge Management</span>
+                    <span>知识管理</span>
                   </React.Fragment>
                 }
-                href="#showcase"
+                href="#knowledge-management"
               />
             </div>
           </Menu.Item>

@@ -101,9 +101,6 @@ export default class Retrieval extends React.PureComponent<Props, States> {
         </div>
         <Divider style={{ margin: '8px 0 16px 0' }} />
         <Tabs tabPosition="left">
-          <TabPane tab="链接/书籍" key="link" disabled={true}>
-            Content of Tab 1
-          </TabPane>
           <TabPane tab="文章" key="doc">
             <InstantSearch
               appId="35UOMI84K6"
@@ -153,11 +150,11 @@ export default class Retrieval extends React.PureComponent<Props, States> {
               </div>
             </InstantSearch>
           </TabPane>
+          <TabPane tab="链接/书籍" key="link" disabled={true}>
+            Content of Tab 2
+          </TabPane>
           <TabPane tab="代码" key="code" disabled={true}>
             Content of Tab 3
-          </TabPane>
-          <TabPane tab="图片" key="image" disabled={true}>
-            Content of Tab 4
           </TabPane>
         </Tabs>
       </section>

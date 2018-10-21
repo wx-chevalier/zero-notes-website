@@ -3,8 +3,9 @@ import * as React from 'react';
 import { HDivider } from '../common/decorator/HDivider';
 import Lab from './lab/Lab';
 import Banner from './banner/Banner';
-import Showcase from './repos/Showcase';
 import Perspective from './perspective/Perspective';
+
+import './Home.scss';
 
 export default class Home extends React.PureComponent {
   render() {
@@ -20,8 +21,8 @@ export default class Home extends React.PureComponent {
           <Lab />
         </div>
         <HDivider />
-        <div id="showcase">
-          <Showcase />
+        <div id="knowledge-management">
+          <iframe src="http://wxyyxc1992.github.io/diagrams/km.html" />
         </div>
         <HDivider />
       </section>

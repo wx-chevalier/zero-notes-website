@@ -24,7 +24,9 @@ export enum LinkType {
   Slide = 'Slide',
 
   // 开源的项目或者框架、库
-  Project = 'Project'
+  Project = 'Project',
+
+  Unknown = '未知'
 }
 
 export interface LinkItem {
@@ -35,12 +37,15 @@ export interface LinkItem {
   href: string;
   // 描述
   desc: string;
+  // 原始数据
+  raw: string;
 
   // 额外信息
-  year: number;
-  author: string;
-  version: string;
+  year: string;
   type: LinkType;
+
+  author?: string;
+  version?: string;
 
   // 文件名
   fileName: string;

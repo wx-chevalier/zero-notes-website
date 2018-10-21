@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import './GHCard.scss';
+import './GHUserCard.scss';
 
-export default class GHCard extends React.Component {
+export default class GHUserCard extends React.Component {
   render() {
     return (
       <section className="fc-react-gh-card">
