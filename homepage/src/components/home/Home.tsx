@@ -22,7 +22,7 @@ export default class Home extends React.PureComponent {
         </div>
         <HDivider />
         <div id="knowledge-management">
-          <iframe src="http://wxyyxc1992.github.io/diagrams/km.html" />
+          <iframe src="https://wxyyxc1992.github.io/diagrams/km.html" />
         </div>
         <HDivider />
       </section>
