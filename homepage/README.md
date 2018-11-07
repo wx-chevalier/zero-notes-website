@@ -2,7 +2,9 @@
 
 个人主页，请前往[根目录](../)了解更多。
 
-# Credits
+# Credits & Motivation
+
+- [SToneX](https://www.sitixi.com/)
 
 ## Books Warehouse
 
