@@ -17,3 +17,5 @@
 - [Apple Whats New](https://help.apple.com/macOS/mojave/whats-new/)
 
 - [Canvas Parallax Mountains](https://codepen.io/wxyyxc1992/pen/xyKjox)
+
+- [Sharding JDBC](http://ww1.shardingjdbc.io/?subid1=035a3348-f263-11e8-a6ae-b8689fb909c5)
