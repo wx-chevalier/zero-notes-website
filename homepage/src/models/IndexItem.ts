@@ -1,9 +1,13 @@
 export default class IndexItem {
   objectId: string;
-  fileName: string;
-  desc: string;
+
   content: string;
+  desc: string;
+  fileName: string;
   href: string;
+  title: string;
+  type: string;
+  year: string;
 
   repo: string;
   categories: string[];

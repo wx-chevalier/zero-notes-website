@@ -11,7 +11,7 @@ test('simpleTitle', () => {
   expect(extractInfoFromTitle(simpleTitle)).toEqual({
     year: '未知',
     title: 'I am title',
-    type: LinkType.Unknown
+    type: LinkType.Article
   });
 });
 
@@ -19,7 +19,7 @@ test('titleWithYear', () => {
   expect(extractInfoFromTitle(titleWithYear)).toEqual({
     year: '2017',
     title: 'I am title',
-    type: LinkType.Unknown
+    type: LinkType.Article
   });
 });
 

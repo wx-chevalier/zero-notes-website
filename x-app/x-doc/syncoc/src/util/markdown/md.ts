@@ -1,11 +1,11 @@
 import { LinkType } from './../../shared/types';
-// https://github.com/jonschlinkert/markdown-toc#optionsmaxdepth
-
 import { FileDescriptor } from '../fs/interface';
 
 /**
  * 功能：从 MarkDown 字符串中获取所有的一级目录
  * @param {string} mdString
+ * https://github.com/jonschlinkert/markdown-toc#optionsmaxdepth
+ *
  */
 export function getH1sFromMDString(mdString: string) {
   const lines = mdString.split('\n');

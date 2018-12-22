@@ -31,13 +31,13 @@ export default class GHUserCard extends React.Component {
               </li>
               <li>
                 <a href="https://github.com/wxyyxc1992/followers" target="_top">
-                  <strong>2.4k</strong>
+                  <strong>2.6k</strong>
                   Followers
                 </a>
               </li>
               <li>
                 <a href="https://github.com/wxyyxc1992" target="_top">
-                  <strong>9.5k</strong>
+                  <strong>10k</strong>
                   Stargazers
                 </a>
               </li>
