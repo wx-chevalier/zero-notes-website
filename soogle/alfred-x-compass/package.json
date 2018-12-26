@@ -1,0 +1,46 @@
+{
+  "name": "alfred-x-compass",
+  "version": "0.0.1",
+  "description": "Search through the xCompass, Docs & Links by wxyyxc1992",
+  "license": "MIT",
+  "repository": "wxyyxc1992/xCompass",
+  "author": {
+    "name": "Wxyyxc1992",
+    "email": "384924552@qq.com",
+    "url": "github.com/wxyyxc1992"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist",
+    "icons"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "aws",
+    "awssdk",
+    "documentation",
+    "productivity"
+  ],
+  "dependencies": {
+    "alfy": "^0.7.0",
+    "pify": "^3.0.0",
+    "string-occurrence": "^1.2.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "*",
+    "aws-sdk": "^2.221.1",
+    "path-exists": "^3.0.0",
+    "xo": "*"
+  }
+}

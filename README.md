@@ -2,18 +2,23 @@
 
 # xCompass | 引航者
 
-## [homepage | 主页](./homepage)
+xCompass 是自我知识管理能力的外化，其目前包含以下部分：
 
-## gh-craft
+- [主页](./homepage): 技术视野、知识图谱、知识检索
 
-Github Profile in Craft World, built with [voxel.js](http://voxeljs.com/) and act as PWAs.
+- [Soogle](./soogle): 构建个人的搜索引擎
 
-![](https://user-images.githubusercontent.com/5803001/40374561-e356d2bc-5e1b-11e8-9df1-bb3c22245875.png)
+- [dv-experiments](./dv-experiments): 一些可视化效果的实验
+  - [gh-cards](./dv-experiments/gh-cards): Github 个人卡片
+  - [gh-craft](./dv-experiments/gh-craft): 仿 MineCraft 的 Github 个人介绍
+  - [glossary-cards](./dv-experiments/gh-cards): 基于 Three.js 的三维卡片
 
-## Application
+建议前往 [xCompass](http://wxyyxc1992.github.io/) 主页交互式浏览。
 
-- [x-client | 终端](./client): xCompass 终端
+# Soogle
 
-  - [weapp](./client/weapp): 微信小程序端
+Soogle 是笔者构建自身知识索引、搜索工具的集合。
 
-- [x-server | 服务端](./server): xCompass 的中心服务端
+# dv-experiments
+
+![image](https://user-images.githubusercontent.com/5803001/50447770-65ba7000-0958-11e9-99fb-55c02b90eae8.png)
