@@ -2,7 +2,7 @@
 
 # xCompass | 引航者
 
-xCompass 是自我知识管理能力的外化，其目前包含以下部分：
+xCompass 是自我知识管理能力的外化，对于笔者自我知识管理的理念可以参考 [Coder Roadmap-程序员的技术视野、知识管理与职业规划，提高个人与团队的研发效能](https://github.com/wxyyxc1992/Coder-Roadmap)；其目前包含以下部分：
 
 - [主页](./homepage): 技术视野、知识图谱、知识检索
 
