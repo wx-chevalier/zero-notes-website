@@ -26,6 +26,18 @@ xCompass 是自我知识管理能力的外化，对于笔者自我知识管理�
 
 Soogle 是笔者构建自身知识索引、搜索工具的集合。
 
+## alfred-sg
+
+- Search in Doc
+
+![image](https://user-images.githubusercontent.com/5803001/50546216-fd70d480-0c5e-11e9-9b6b-cceaf7860c58.png)
+
+- Search in links([Awesome-Links](https://github.com/wxyyxc1992/Awesome-Links))
+
+![image](https://user-images.githubusercontent.com/5803001/50546165-352b4c80-0c5e-11e9-9f16-fb2a115a3506.png)
+
 # dv-experiments
+
+## gh-craft
 
 ![image](https://user-images.githubusercontent.com/5803001/50447770-65ba7000-0958-11e9-99fb-55c02b90eae8.png)
