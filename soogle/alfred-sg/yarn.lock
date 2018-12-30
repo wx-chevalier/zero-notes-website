@@ -3919,11 +3919,6 @@ regex-not@^1.0.0, regex-not@^1.0.2:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
 
-regex-occurrence@^1.0.0:
-  version "1.0.0"
-  resolved "http://registry.npm.taobao.org/regex-occurrence/download/regex-occurrence-1.0.0.tgz#99ee7ce9a0da3f0566e03df6899b804c36ed0efa"
-  integrity sha1-me586aDaPwVm4D32iZuATDbtDvo=
-
 regexpp@^2.0.1:
   version "2.0.1"
   resolved "http://registry.npm.taobao.org/regexpp/download/regexpp-2.0.1.tgz#8d19d31cf632482b589049f8281f93dbcba4d07f"
@@ -4332,14 +4327,6 @@ strict-uri-encode@^1.0.0:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/strict-uri-encode/download/strict-uri-encode-1.1.0.tgz#279b225df1d582b1f54e65addd4352e18faa0713"
   integrity sha1-J5siXfHVgrH1TmWt3UNS4Y+qBxM=
-
-string-occurrence@^1.2.0:
-  version "1.2.0"
-  resolved "http://registry.npm.taobao.org/string-occurrence/download/string-occurrence-1.2.0.tgz#6054be8ecf4af487d21e5202ed251a693030b760"
-  integrity sha1-YFS+js9K9IfSHlIC7SUaaTAwt2A=
-  dependencies:
-    escape-string-regexp "^1.0.4"
-    regex-occurrence "^1.0.0"
 
 string-width@^1.0.1:
   version "1.0.2"

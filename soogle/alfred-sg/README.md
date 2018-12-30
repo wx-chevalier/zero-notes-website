@@ -1,35 +1,27 @@
-# alfred-aws [![Build Status](https://travis-ci.org/SamVerschueren/alfred-aws.svg?branch=master)](https://travis-ci.org/SamVerschueren/alfred-aws)
+# alfred-sg
 
-> Search through the [AWS JavaScript SDK](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/top-level-namespace.html)
-
-<img src="screenshot.png" width="850">
-
+alfred-sg is part of [Soogle](https://github.com/wxyyxc1992/xCompass/tree/master/soogle).
 
 ## Install
 
+```sh
+$ npm install -g alfred-sg
+# or
+$ yarn global add alfred-sg
 ```
-$ npm install -g alfred-aws
-```
-
-*Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
-
 
 ## Usage
 
-In Alfred, type `aws`, <kbd>Enter</kbd>, and your query.
+- Search in Doc
 
-Select an item and press <kbd>Enter</kbd> to go to the AWS SDK documentation page.<br>
-Press <kbd>Shift</kbd> to view the documentaion in Quick Look.
+![image](https://user-images.githubusercontent.com/5803001/50546216-fd70d480-0c5e-11e9-9b6b-cceaf7860c58.png)
 
+- Search in links([Awesome-Links](https://github.com/wxyyxc1992/Awesome-Links))
 
-## Related
+![image](https://user-images.githubusercontent.com/5803001/50546165-352b4c80-0c5e-11e9-9f16-fb2a115a3506.png)
 
-- [alfred-ng](https://github.com/SamVerschueren/alfred-ng) - Search for Angular API references
-- [alfred-npms](https://github.com/sindresorhus/alfred-npms) - Search for npm packages with npms.io
-- [alfred-font-awesome](https://github.com/SamVerschueren/alfred-font-awesome) - Search for font-awesome icons
-- [alfy](https://github.com/sindresorhus/alfy) - Create Alfred workflows with ease
+# About
 
+## WIP
 
-## License
-
-MIT © [Sam Verschueren](https://github.com/SamVerschueren)
+- [ ] Add local cache

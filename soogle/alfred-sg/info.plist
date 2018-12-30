@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>aws</string>
+	<string>sg</string>
 	<key>bundleid</key>
-	<string>com.samverschueren.alfred-aws</string>
+	<string>wx.alfred-sg</string>
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
@@ -57,7 +57,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>aws</string>
+				<string>sg</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -77,7 +77,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search through the AWS JavaScript SDK</string>
+				<string>Search through the xCompass, built with Soogle</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>

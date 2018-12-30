@@ -1,44 +1,20 @@
 'use strict';
 const alfy = require('alfy');
-const stringOccurrence = require('string-occurrence');
-const algoliasearch = require('algoliasearch');
+const { searchDoc, searchLink } = require('./lib/search.js');
 
-const client = algoliasearch('35UOMI84K6', '632bd8009b7260d30a352e9d9b14d552');
-const docIndex = client.initIndex('doc');
-const linkIndex = client.initIndex('link');
-
-// const items = data.map(api => {
-// 	const url = `http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/${
-// 		api.service
-// 	}.html#${api.name}-property`;
-
-// 	return {
-// 		title: api.name,
-// 		autocomplete: api.name,
-// 		subtitle: api.serviceFullName,
-// 		keywords: api.keywords,
-// 		arg: url,
-// 		quicklookurl: url,
-// 		icon: {
-// 			path: `./icons/${api.icon}.png`
-// 		}
-// 	};
-// });
-
-const matcher = (input, items) => {
+const matcher = (input = 'REST') => {
 	const tokens = input
 		.trim()
 		.toLowerCase()
 		.split(' ');
 
-	const result = items.filter(item => {
-		item.count = stringOccurrence(item.keywords, tokens);
+	const isLink = tokens[0] === 'link';
 
-		return item.count > 0;
-	});
-
-	return result.sort((a, b) => b.count - a.count);
+	(isLink ? searchLink(tokens.join(' ')) : searchDoc(tokens.join(' '))).then(
+		res => {
+			alfy.output(res);
+		}
+	);
 };
 
-// alfy.output(matcher(alfy.input, items));
-console.log(alfy.input);
+matcher(alfy.input);
