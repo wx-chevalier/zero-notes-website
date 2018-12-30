@@ -31,6 +31,15 @@ const repos: { [key: string]: ReposityConfig } = {
     localPath: `${baseLocalDir}/Awesome-Links`
   },
 
+  'Awesome-CS-Books-Warehouse': {
+    description:
+      ':books: Awesome CS Books/Series(.pdf by git lfs) Warehouse, ProgrammingLanguage, SoftwareEngineering, Web, AI, ServerSideApplication, Infrastructure, FE etc. :dizzy: 优秀计算机科学与技术领域相关的书籍归档',
+    sUrl: 'https://github.com/wxyyxc1992/Awesome-CS-Books-Warehouse',
+    chapterHeader: 'https://parg.co/UGo',
+    depth: 2,
+    localPath: `${baseLocalDir}/Awesome-CS-Books-Warehouse`
+  },
+
   'Awesome-CheatSheet': {
     description:
       'Awesome-CheatSheet, :books: Ultimate CheatSheets(Tutorials&MindMap), overview of syntax, features and practical tips, collection of useful code snippets, go from zero to hero at fly. :dizzy:  干货满满的全栈开发速学速查手册集锦',

@@ -15,7 +15,6 @@ export async function buildDocIndex(client) {
   const index = client.initIndex('doc');
 
   // 设置相关性
-
   index.setSettings({
     searchableAttributes: ['fileName', 'repo', 'categories', 'desc', 'content'],
     attributesForFaceting: ['categories', 'repo']
@@ -27,7 +26,7 @@ export async function buildDocIndex(client) {
 
     const files = walkSync(repo.localPath).filter(
       path =>
-        path.endsWith('.md') &&
+        (path.endsWith('.md') || path.endsWith('.pdf')) &&
         path !== 'README.md' &&
         path.indexOf('Weekly') === -1
     );
@@ -37,6 +36,25 @@ export async function buildDocIndex(client) {
       const href = `${repo.sUrl}/blob/master/${file}`;
       const absoluteFile = `${repo.localPath}/${file}`;
       let fileName: string = file.split('/').reverse()[0];
+
+      // 判断是否为 PDF
+      if (file.endsWith('pdf')) {
+        index.addObject({
+          objectID: md5(href),
+          fileName,
+          repo: repoName,
+          categories: file
+            .split('/')
+            .filter(
+              c => Number.isNaN(parseInt(c, 10)) && c.indexOf('.md') === -1
+            ),
+          href,
+          desc: fileName,
+          content: fileName
+        });
+
+        return;
+      }
 
       // 读取文件内容
       const content = await readFileAsync(absoluteFile, { encoding: 'utf-8' });
