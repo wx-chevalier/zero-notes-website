@@ -14,6 +14,10 @@ xCompass 是自我知识管理能力的外化，对于笔者自我知识管理�
   - [sg-server](./soogle/sg-server): 轻量级检索服务器
   - [sg-tools](./soogle/sg-tools): 工具杂集合
 
+- [VSCode](./vscode): 自制 VSCode 插件
+
+  - [vscode-coding-snippets](./vscode/vscode-coding-snippets): vscode-coding-snippets, 代码片集合
+
 - [dv-experiments](./dv-experiments): 一些可视化效果的实验
 
   - [gh-cards](./dv-experiments/gh-cards): Github 个人卡片
@@ -35,6 +39,10 @@ Soogle 是笔者构建自身知识索引、搜索工具的集合。
 - Search in links([Awesome-Links](https://github.com/wxyyxc1992/Awesome-Links))
 
 <img src="https://user-images.githubusercontent.com/5803001/50546165-352b4c80-0c5e-11e9-9f16-fb2a115a3506.png" width="600px" height="400px" />
+
+# VSCode
+
+## vscode-coding-snippets
 
 # dv-experiments
 
