@@ -13,16 +13,18 @@ xCompass 是自我知识管理能力的外化，对于笔者自我知识管理�
   - [alfred-sg](./soogle/alfred-sg): Alfred 接入端
   - [sg-server](./soogle/sg-server): 轻量级检索服务器
   - [sg-tools](./soogle/sg-tools): 工具杂集合
+  - [sg-images](./soogle/sg-images): 图片提取、存储与备份
 
-- [VSCode](./vscode): 自制 VSCode 插件
+- [iot](./iot)
 
-  - [vscode-coding-snippets](./vscode/vscode-coding-snippets): vscode-coding-snippets, 代码片集合
+  - [raspberry-wechat-assistant](./iot/raspberry-wechat-assistant), 基于树莓派的行车时微信辅助，语音识别与控制。
 
 - [dv-experiments](./dv-experiments): 一些可视化效果的实验
 
   - [gh-cards](./dv-experiments/gh-cards): Github 个人卡片
   - [gh-craft](./dv-experiments/gh-craft): 仿 MineCraft 的 Github 个人介绍
   - [glossary-cards](./dv-experiments/gh-cards): 基于 Three.js 的三维卡片
+  - [ElectronOCR](./ocr): Cute OCR Toolkits For OSX, Based On Electron, React & Tesseract
 
 建议前往 [xCompass](http://wxyyxc1992.github.io/) 主页交互式浏览。
 
@@ -39,10 +41,6 @@ Soogle 是笔者构建自身知识索引、搜索工具的集合。
 - Search in links([Awesome-Links](https://github.com/wxyyxc1992/Awesome-Links))
 
 <img src="https://user-images.githubusercontent.com/5803001/50546165-352b4c80-0c5e-11e9-9f16-fb2a115a3506.png" width="600px" height="400px" />
-
-# VSCode
-
-## vscode-coding-snippets
 
 # dv-experiments
 
