@@ -36,7 +36,7 @@ export async function buildLinkIndex(client) {
     attributesForFaceting: ['year', 'type', 'categories']
   });
 
-  const repoName = 'Awesome-Links';
+  const repoName = 'Awesome-Lists';
 
   // 获取仓库的配置信息
   const repo: ReposityConfig = repos[repoName];

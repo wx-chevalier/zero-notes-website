@@ -22,13 +22,13 @@ const baseLocalDir = '/Users/apple/Workspace/Repos/Docs';
 
 // 所有仓库的声明
 const repos: { [key: string]: ReposityConfig } = {
-  'Awesome-Links': {
+  'Awesome-Lists': {
     description:
-      'Awesome Links, Guide to Galaxy, curated, worthy and up-to-date links/reading list for ITCS-Coding/Algorithm/SoftwareArchitecture/AI. ITCS-编程/算法/软件架构/人工智能等领域的文章/书籍/资料/项目链接精选，岁月沉淀的美好',
-    sUrl: 'https://github.com/wxyyxc1992/Awesome-Links',
+      'Awesome Lists, Guide to Galaxy, curated, worthy and up-to-date links/reading list for ITCS-Coding/Algorithm/SoftwareArchitecture/AI. ITCS-编程/算法/软件架构/人工智能等领域的文章/书籍/资料/项目链接精选，岁月沉淀的美好',
+    sUrl: 'https://github.com/wxyyxc1992/Awesome-Lists',
     chapterHeader: 'https://parg.co/UGo',
     depth: 2,
-    localPath: `${baseLocalDir}/Awesome-Links`
+    localPath: `${baseLocalDir}/Awesome-Lists`
   },
 
   'Awesome-CS-Books-Warehouse': {

@@ -96,11 +96,11 @@ export async function buildDocIndex(client) {
            * {
            * "objectID":md5(href),
             "fileName": "Build-Your-Own-X-From-Scratch.md",
-            "repo": "Awesome-Links",
+            "repo": "Awesome-Lists",
             "categories": [
               "Zen"
             ],
-            "href": "https://github.com/wxyyxc1992/Awesome-Links/blob/master/Zen/Build-Your-Own-X-From-Scratch.md",
+            "href": "https://github.com/wxyyxc1992/Awesome-Lists/blob/master/Zen/Build-Your-Own-X-From-Scratch.md",
             "desc": "Build Your Own X From Scratch",
             "content": "- [Laptop #Project#](https://github.com/thoughtbot/laptop): A shell script to set up a macOS laptop for web and mobile development.",
           }
