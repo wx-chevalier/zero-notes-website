@@ -22,7 +22,6 @@
     "isomorphic-fetch": "^2.2.1",
     "markdown-toc": "^1.2.0",
     "md5": "^2.2.1",
-    "puppeteer": "^0.11.0",
     "walk-sync": "^0.3.2"
   },
   "devDependencies": {

@@ -40,13 +40,13 @@ const repos: { [key: string]: ReposityConfig } = {
     localPath: `${baseLocalDir}/Awesome-CS-Books-Warehouse`
   },
 
-  'Awesome-CheatSheet': {
+  'Awesome-CheatSheets': {
     description:
-      'Awesome-CheatSheet, :books: Ultimate CheatSheets(Tutorials&MindMap), overview of syntax, features and practical tips, collection of useful code snippets, go from zero to hero at fly. :dizzy:  干货满满的全栈开发速学速查手册集锦',
-    sUrl: 'https://github.com/wxyyxc1992/Awesome-CheatSheet',
+      'Awesome-CheatSheets, :books: Ultimate CheatSheets(Tutorials&MindMap), overview of syntax, features and practical tips, collection of useful code snippets, go from zero to hero at fly. :dizzy:  干货满满的全栈开发速学速查手册集锦',
+    sUrl: 'https://github.com/wxyyxc1992/Awesome-CheatSheets',
     chapterHeader: 'https://parg.co/UCb',
     depth: 2,
-    localPath: `${baseLocalDir}/Awesome-CheatSheet`
+    localPath: `${baseLocalDir}/Awesome-CheatSheets`
   },
 
   'ProgrammingLanguage-Series': {
