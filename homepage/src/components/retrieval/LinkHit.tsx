@@ -1,6 +1,6 @@
 import { Avatar, Tag } from 'antd';
 import Ellipsis from 'ant-design-pro/lib/Ellipsis';
-import React from 'react';
+import * as React from 'react';
 import { Highlight } from 'react-instantsearch-dom';
 import IndexItem from 'src/models/IndexItem';
 

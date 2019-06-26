@@ -1,11 +1,11 @@
 import { Menu, Anchor, Icon, Drawer } from 'antd';
 import * as React from 'react';
+import * as Loadable from 'react-loadable';
 import { inject, observer } from 'mobx-react';
-
-import Retrieval from '../retrieval/Retrieval';
+import { RouterStore } from 'mobx-react-router';
 
 import './Nav.scss';
-import { RouterStore } from 'mobx-react-router';
+import Loading from 'x-components/common/Loading';
 
 const { Link } = Anchor;
 
@@ -14,6 +14,11 @@ const prefix = 'nav';
 interface Props {
   routerStore?: RouterStore;
 }
+
+const LoadableRetrieval = Loadable({
+  loader: () => import('../retrieval/Retrieval'),
+  loading: Loading
+});
 
 @inject('routerStore')
 @observer
@@ -113,7 +118,7 @@ export default class Nav extends React.Component<Props> {
             this.setState({ isRetrievalDrawerVisible: false });
           }}
         >
-          <Retrieval />
+          <LoadableRetrieval />
         </Drawer>
       </section>
     );

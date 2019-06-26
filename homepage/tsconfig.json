@@ -4,7 +4,7 @@
     "lib": ["es6", "es7", "dom"],
     "jsx": "react",
     "target": "es5",
-    "module": "es2015",
+    "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "allowJs": true,
