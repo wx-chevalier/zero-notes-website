@@ -9876,9 +9876,10 @@ parallel-transform@^1.1.0:
     inherits "^2.0.3"
     readable-stream "^2.1.5"
 
-parallelshell@^3.0.2:
-  version "3.0.2"
-  resolved "http://registry.npm.taobao.org/parallelshell/download/parallelshell-3.0.2.tgz#fffc55aaa145bdd44b5381cf7fd5e521fc21aa7b"
+parallelshell@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npm.taobao.org/parallelshell/download/parallelshell-3.0.1.tgz#0587ce1535350543916d8f3d329fbfa4a0355f22"
+  integrity sha1-BYfOFTU1BUORbY89Mp+/pKA1XyI=
 
 param-case@2.1.x:
   version "2.1.1"

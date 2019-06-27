@@ -32,7 +32,7 @@ export default class Perspective extends React.PureComponent {
         </div>
         <div className={`${prefix}-mindmap`}>
           <img
-            src="https://github.com/wxyyxc1992/Coder-Roadmap/blob/master/TechRoad/MindMap/MindMap.summary.white.png?raw=true"
+            src="https://github.com/wx-chevalier/Developer-Zero-To-Mastery/blob/master/MindMap/MindMap.summary.white.png?raw=true"
             alt=""
           />
         </div>

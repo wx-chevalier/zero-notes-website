@@ -127,7 +127,7 @@
     "npm-check": "^5.7.1",
     "offline-plugin": "^5.0.3",
     "optimize-css-assets-webpack-plugin": "5.0.1",
-    "parallelshell": "^3.0.2",
+    "parallelshell": "3.0.1",
     "postcss-loader": "3.0.0",
     "react-hot-loader": "^4.2.0",
     "resolve-url-loader": "3.0.0",
