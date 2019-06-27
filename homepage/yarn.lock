@@ -7062,6 +7062,13 @@ image-size@~0.5.0:
   version "0.5.5"
   resolved "http://registry.npm.taobao.org/image-size/download/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
 
+immutability-helper@^2.7.1:
+  version "2.9.1"
+  resolved "https://registry.npm.taobao.org/immutability-helper/download/immutability-helper-2.9.1.tgz#71c423ba387e67b6c6ceba0650572f2a2a6727df"
+  integrity sha1-ccQjujh+Z7bGzroGUFcvKipnJ98=
+  dependencies:
+    invariant "^2.2.0"
+
 immutable@^3.7.4, immutable@^3.8.1:
   version "3.8.2"
   resolved "http://registry.npm.taobao.org/immutable/download/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
@@ -7245,7 +7252,7 @@ intersperse@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/intersperse/download/intersperse-1.0.0.tgz#f2561fb1cfef9f5277cc3347a22886b4351a5181"
 
-invariant@^2.2.1, invariant@^2.2.2, invariant@^2.2.4:
+invariant@^2.2.0, invariant@^2.2.1, invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "http://registry.npm.taobao.org/invariant/download/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   dependencies:
@@ -9652,6 +9659,11 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+opencollective-postinstall@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npm.taobao.org/opencollective-postinstall/download/opencollective-postinstall-2.0.2.tgz#5657f1bede69b6e33a45939b061eb53d3c6c3a89"
+  integrity sha1-Vlfxvt5ptuM6RZObBh61PTxsOok=
+
 opener@^1.4.3, opener@^1.5.1:
   version "1.5.1"
   resolved "http://registry.npm.taobao.org/opener/download/opener-1.5.1.tgz#6d2f0e77f1a0af0032aca716c2c1fbb8e7e8abed"
@@ -10869,6 +10881,40 @@ postcss@^7.0.1:
     source-map "^0.6.1"
     supports-color "^5.5.0"
 
+preact-compat@^3.19.0:
+  version "3.19.0"
+  resolved "https://registry.npm.taobao.org/preact-compat/download/preact-compat-3.19.0.tgz#a71457b6a3bf051690a4411603bc2085aa061c2f"
+  integrity sha1-pxRXtqO/BRaQpEEWA7wghaoGHC8=
+  dependencies:
+    immutability-helper "^2.7.1"
+    preact-context "^1.1.3"
+    preact-render-to-string "^3.8.2"
+    preact-transition-group "^1.1.1"
+    prop-types "^15.6.2"
+    standalone-react-addons-pure-render-mixin "^0.1.1"
+
+preact-context@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.npm.taobao.org/preact-context/download/preact-context-1.1.3.tgz#26d06db0f39d8d9c890df5ada9a99a943586ec68"
+  integrity sha1-JtBtsPOdjZyJDfWtqamalDWG7Gg=
+
+preact-render-to-string@^3.8.2:
+  version "3.8.2"
+  resolved "https://registry.npm.taobao.org/preact-render-to-string/download/preact-render-to-string-3.8.2.tgz#bd72964d705a57da3a9e72098acaa073dd3ceff9"
+  integrity sha1-vXKWTXBaV9o6nnIJisqgc9087/k=
+  dependencies:
+    pretty-format "^3.5.1"
+
+preact-transition-group@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/preact-transition-group/download/preact-transition-group-1.1.1.tgz#f0a49327ea515ece34ea2be864c4a7d29e5d6e10"
+  integrity sha1-8KSTJ+pRXs406ivoZMSn0p5dbhA=
+
+preact@^8.4.2:
+  version "8.4.2"
+  resolved "https://registry.npm.taobao.org/preact/download/preact-8.4.2.tgz#1263b974a17d1ea80b66590e41ef786ced5d6a23"
+  integrity sha1-EmO5dKF9HqgLZlkOQe94bO1daiM=
+
 preferred-pm@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/preferred-pm/download/preferred-pm-1.0.1.tgz#539df37ce944b1b765ae944a8ba34a7e68694e8d"
@@ -10905,6 +10951,11 @@ pretty-format@^23.6.0:
   dependencies:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
+
+pretty-format@^3.5.1:
+  version "3.8.0"
+  resolved "https://registry.npm.taobao.org/pretty-format/download/pretty-format-3.8.0.tgz#bfbed56d5e9a776645f4b1ff7aa1a3ac4fa3c385"
+  integrity sha1-v77VbV6ad2ZF9LH/eqGjrE+jw4U=
 
 pretty-time@^1.1.0:
   version "1.1.0"
@@ -13071,6 +13122,11 @@ stackframe@^1.0.4:
   version "1.0.4"
   resolved "http://registry.npm.taobao.org/stackframe/download/stackframe-1.0.4.tgz#357b24a992f9427cba6b545d96a14ed2cbca187b"
 
+standalone-react-addons-pure-render-mixin@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npm.taobao.org/standalone-react-addons-pure-render-mixin/download/standalone-react-addons-pure-render-mixin-0.1.1.tgz#3c7409f4c79c40de9ac72c616cf679a994f37551"
+  integrity sha1-PHQJ9MecQN6axyxhbPZ5qZTzdVE=
+
 static-extend@^0.1.1:
   version "0.1.2"
   resolved "http://registry.npm.taobao.org/static-extend/download/static-extend-0.1.2.tgz#60809c39cbff55337226fd5e0b520f341f1fb5c6"
@@ -13639,6 +13695,14 @@ tryer@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/tryer/download/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
 
+ts-import-plugin@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.npm.taobao.org/ts-import-plugin/download/ts-import-plugin-1.6.1.tgz#96477d241a154954508aa1397be03000735f98d0"
+  integrity sha1-lkd9JBoVSVRQiqE5e+AwAHNfmNA=
+  dependencies:
+    opencollective-postinstall "^2.0.2"
+    tslib "^1.10.0"
+
 ts-jest@^23.1.3:
   version "23.10.4"
   resolved "http://registry.npm.taobao.org/ts-jest/download/ts-jest-23.10.4.tgz#a7a953f55c9165bcaa90ff91014a178e87fe0df8"
@@ -13671,6 +13735,11 @@ ts-loader@^4.5.0:
     loader-utils "^1.0.2"
     micromatch "^3.1.4"
     semver "^5.0.1"
+
+tslib@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
+  integrity sha1-w8GflZc/sKYpc/sJ2Q2WHuQ+XIo=
 
 tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.2:
   version "1.9.3"

@@ -1,4 +1,5 @@
 const path = require('path');
+const tsImportPluginFactory = require('ts-import-plugin');
 
 const { dependencies } = require('../package.json');
 
@@ -23,8 +24,6 @@ const fontsOptions = {
   mimetype: 'application/font-woff',
   name: 'font/[name].[ext]'
 };
-
-console.log(path.resolve(__dirname, '../', 'src', 'components'));
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
@@ -60,7 +59,12 @@ module.exports = {
       {
         test: /\.(ts|tsx)?$/,
         loader: 'awesome-typescript-loader',
-        exclude: /(node_modules|.*ts-worker.*)/
+        exclude: /(node_modules|.*ts-worker.*)/,
+        options: {
+          getCustomTransformers: () => ({
+            before: [tsImportPluginFactory(/** options */)]
+          })
+        }
       },
       {
         test: /\.(png|jpg|gif)$/,
