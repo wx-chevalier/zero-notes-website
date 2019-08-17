@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:8080/home -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="首页">
+    <meta name="author" content="JinWYP">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>O'Relly Generator</title>
+
+    <!-- Bootstrap -->
+    <link href="./home_files/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"> -->
+
+    <link href="./home_files/main.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      html {
+        font-size: 10px;
+      }
+
+      .ogbox .book_title_below {
+        font-size: 6rem;
+      }
+    </style>
+  </head>
+
+  <body ng-app="websiteApp" class="ng-scope">
+    <div class="container-fluid ogbox ng-scope" ng-controller="ogController as og">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="book_cover">
+            <div class="book_head theme_7 theme_0" ng-class="og.data.currentColor.style">
+              <p class="subtitle_en" contenteditable="true">
+                某熊的技术之路
+              </p>
+            </div>
+            <div id="book_body">
+              <p class="subtitle_ja_above" contenteditable="true"></p>
+              <div class="book_title_cover  theme_7 theme_0" ng-class="og.data.currentColor.style">
+                <p class="book_title_above" contenteditable="true" style="
+    font-size: 3rem;
+">资料、笔记、代码、项目</p>
+                <p class="book_title_below" contenteditable="true" style="
+    font-size: 5rem;
+">某熊的技术之路</p>
+              </div>
+              <p class="subtitle_ja_below" contenteditable="true" style="
+    font-size: 2rem;
+">知识体系，编程语言，软件工程，大前端与 Web</p><div style="
+    font-size: 2rem;
+" class="subtitle_ja_below">服务端架构，分布式基础架构，算法，产品</div><p></p>
+            </div>
+            <div class="animal" dragbox="" left="60" top="20" limitleft="-70" limitright="230" maxwidth="320" style="position: relative; top: -6px; left: 66px;">
+              <img class="coverAnimal" ng-src="./src/css/images/og/04.png" alt="Cow" src="./home_files/04.png" style="max-width: 326px;">
+            </div>
+            <div class="book_foot">
+              <div class="foot_left" style="
+    padding-bottom: 35px;
+">
+                <p id="logo_en" contenteditable="true">打造你的技术围栏</p>
+                <p id="logo_ja" contenteditable="true">Just Coder, Travel in Galaxy</p>
+              </div>
+              <div class="foot_right">
+                <p class="author" contenteditable="true">王下邀月熊 编著</p>
+                <p class="author" style="font-size: 1.5rem;" contenteditable="true">
+                  github/wx-chevalier
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+    <!--<script type="text/javascript" src="./bower_components/es6-promise-4.2.6/lib/es6-promise.js"></script>-->
+    <!--<script type="text/javascript" src="./bower_components/es6-promise-4.2.6/lib/es6-promise.auto.js"></script>-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./home_files/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./home_files/bootstrap.min.js"></script>
+
+    <!--<script type="text/javascript" src="./bower_components/html2canvas-0.4.1/build/html2canvas.js"></script>-->
+    <script src="./home_files/html2canvas.min.js"></script>
+
+    <script src="./home_files/angular.min.js"></script>
+    <script src="./home_files/ngStorage.min.js"></script>
+
+    <!-- <script type="text/javascript">
+    document.write('<script src="' + (location.protocol || 'http:') + '//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+</script> -->
+
+    <script type="text/javascript" src="./home_files/app.js"></script>
+    <script type="text/javascript" src="./home_files/dragbox.directive.js"></script>
+    <script type="text/javascript" src="./home_files/og.controllers.js"></script>
+  
+
+</body></html>
