@@ -14,5 +14,10 @@
   "files.exclude": {
     "build": true
   },
-  "emmet.excludeLanguages": ["typescriptreact"]
+  "emmet.excludeLanguages": [
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
