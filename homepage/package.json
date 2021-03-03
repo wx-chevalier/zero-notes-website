@@ -70,7 +70,7 @@
     "@types/react-helmet": "^5.0.7",
     "ant-design-pro": "^2.0.0",
     "antd": "^3.5.2",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "class-names": "^1.0.0",
     "classname": "^0.0.0",
     "classnames": "^2.2.6",
