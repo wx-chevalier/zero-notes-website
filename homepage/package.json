@@ -123,7 +123,7 @@
     "less-loader": "^4.1.0",
     "mini-css-extract-plugin": "^0.4.0",
     "mobx-react-devtools": "6.0.3",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "npm-check": "^5.7.1",
     "offline-plugin": "^5.0.3",
     "optimize-css-assets-webpack-plugin": "5.0.1",
